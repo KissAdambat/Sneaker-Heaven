@@ -26,10 +26,11 @@
             <Button x:Name="button3" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="330,246,0,0" VerticalAlignment="Top" Width="120" Click="button3_Click"/>
         </Grid>
         <Grid x:Name="Grid2fej" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="31" Margin="11,7,0,0" VerticalAlignment="Top" Width="786">
-            <Button x:Name="button1" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="606,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button1_Click"/>
-            <Button x:Name="button2" Content="Regisztráció" HorizontalAlignment="Left" Margin="694,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button2_Click"/>
+            <Button x:Name="button1" Content="Login" HorizontalAlignment="Left" Margin="606,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button1_Click"/>
+            <Button x:Name="button2" Content="Register" HorizontalAlignment="Left" Margin="694,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button2_Click"/>
+            <Button Content="Home" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="88" Click="Button_Click_1"/>
         </Grid>
-        <Grid x:Name="GridMain" Grid.Column="1" Grid.ColumnSpan="3" Margin="11,43,10,10"/>
+        <Grid x:Name="GridMain" Grid.ColumnSpan="4" Margin="10,43,10,10"/>
         <Grid x:Name="GridReg" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" Width="78"/>
             <Label x:Name="label3" Content="Felhasználónév" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Width="112"/>

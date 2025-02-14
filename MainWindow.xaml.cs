@@ -27,6 +27,8 @@ namespace sneaker_heaven
         public MainWindow()
         {
             InitializeComponent();
+            GridLog.Visibility = Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
         }
 
 
@@ -40,51 +42,60 @@ namespace sneaker_heaven
         {
             string username = (string)textbox1.Text;
             string jelszo = (string)textbox2.Text;
-            Conn.Connection.Open();
 
-            string sql = "SELECT `UserName`, `Password` FROM `user` WHERE 1";
-
-            MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
-
-            MySqlDataReader dr = cmd.ExecuteReader();
-
-            bool regisztralt = false;
-
-            dr.Read();
-
-            do
+            if(username == "" || jelszo == "")
             {
-                var felhasznalo = new
-                {
-                    UserNameAdatbazis = dr.GetString(0),
-                    JelszoAdatbazis = dr.GetString(1),
-                };
-
-                if (username == felhasznalo.UserNameAdatbazis && jelszo == felhasznalo.JelszoAdatbazis)
-                {
-                    regisztralt = true;
-                }
-
-
-            }
-            while (dr.Read());
-
-            if (regisztralt == true)
-            {
-
-                MessageBox.Show("Sikeres Bejelentkezés");
-                GridLog.Visibility = Visibility.Hidden;
-                GridMain.Visibility = Visibility.Visible;
-                //Grid2fej.Visibility = Visibility.Hidden;
+                MessageBox.Show("No data found");
             }
             else
             {
-                MessageBox.Show("Nincs felhasználó");
+                Conn.Connection.Open();
+
+                string sql = "SELECT `UserName`, `Password` FROM `user` WHERE 1";
+
+                MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+
+                MySqlDataReader dr = cmd.ExecuteReader();
+
+                bool regisztralt = false;
+
+                dr.Read();
+
+                do
+                {
+                    var felhasznalo = new
+                    {
+                        UserNameAdatbazis = dr.GetString(0),
+                        JelszoAdatbazis = dr.GetString(1),
+                    };
+
+                    if (username == felhasznalo.UserNameAdatbazis && jelszo == felhasznalo.JelszoAdatbazis)
+                    {
+                        regisztralt = true;
+                    }
+
+
+                }
+                while (dr.Read());
+
+                if (regisztralt == true)
+                {
+
+                    MessageBox.Show("Sikeres Bejelentkezés");
+                    GridLog.Visibility = Visibility.Hidden;
+                    GridMain.Visibility = Visibility.Visible;
+                    //Grid2fej.Visibility = Visibility.Hidden;
+                }
+                else
+                {
+                    MessageBox.Show("Nincs felhasználó");
+                }
+
+                dr.Close();
+
+                Conn.Connection.Close();
             }
-
-            dr.Close();
-
-            Conn.Connection.Close();
+           
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -98,27 +109,34 @@ namespace sneaker_heaven
             string email = (string)textbox4.Text;
             string jelszo = (string)textbox5.Text;
 
-            try
+            if(username == "" || email == "" ||  jelszo == "")
             {
-
-                Conn.Connection.Open();
-
-                string sql = $"INSERT INTO `user`(`UserName`, `Email`, `Password`) VALUES ('{username}','{email}','{jelszo}')";
-
-                MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
-                cmd.ExecuteNonQuery();
-
-                Conn.Connection.Close();
-
-                MessageBox.Show("Sikeres Regisztráció");
-
-                GridReg.Visibility = Visibility.Hidden;
-                GridMain.Visibility = Visibility.Visible;
-
+                MessageBox.Show("No data found");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Nem jó az adatbázis kapcsolódása");
+                try
+                {
+
+                    Conn.Connection.Open();
+
+                    string sql = $"INSERT INTO `user`(`UserName`, `Email`, `Password`) VALUES ('{username}','{email}','{jelszo}')";
+
+                    MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+                    cmd.ExecuteNonQuery();
+
+                    Conn.Connection.Close();
+
+                    MessageBox.Show("Sikeres Regisztráció");
+
+                    GridReg.Visibility = Visibility.Hidden;
+                    GridMain.Visibility = Visibility.Visible;
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("The database is not connected");
+                }
             }
         }
 
@@ -126,6 +144,13 @@ namespace sneaker_heaven
         {
             GridReg.Visibility = Visibility.Visible;
             GridMain.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            GridReg.Visibility = Visibility.Hidden;
+            GridMain.Visibility = Visibility.Visible;
+            GridLog.Visibility = Visibility.Hidden;
         }
     }
 }
