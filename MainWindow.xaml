@@ -32,14 +32,16 @@
         </Grid>
         <Grid x:Name="GridMain" Grid.ColumnSpan="4" Margin="10,43,10,10"/>
         <Grid x:Name="GridReg" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" Width="78"/>
-            <Label x:Name="label3" Content="Felhasználónév" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Width="112"/>
-            <Label x:Name="label4" Content="Email" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.536,-0.114"/>
-            <Label x:Name="label5" Content="Jelszó" HorizontalAlignment="Center" Margin="0,199,0,0" VerticalAlignment="Top" Width="112"/>
-            <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="334,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058"/>
-            <TextBox x:Name="textbox4" HorizontalAlignment="Left" Margin="334,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058"/>
-            <TextBox x:Name="textbox5" HorizontalAlignment="Left" Margin="334,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058" TextChanged="TextBox_TextChanged"/>
-            <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="334,278,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+            <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="78"/>
+            <Label x:Name="label3" Content="Felhasználónév" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Width="112"/>
+            <Label x:Name="label4" Content="Email" HorizontalAlignment="Left" Margin="281,105,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.536,-0.114"/>
+            <Label x:Name="label5" Content="Jelszó" HorizontalAlignment="Left" Margin="281,154,0,0" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="281,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058"/>
+            <TextBox x:Name="textbox4" HorizontalAlignment="Left" Margin="281,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058"/>
+            <TextBox x:Name="textbox5" HorizontalAlignment="Left" Margin="281,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058" TextChanged="TextBox_TextChanged"/>
+            <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="281,262,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+            <Label x:Name="label7" Content="Jelszó" HorizontalAlignment="Left" Margin="281,208,0,0" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="textbox6" HorizontalAlignment="Left" Margin="281,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058" TextChanged="TextBox_TextChanged"/>
         </Grid>
 
     </Grid>

@@ -36,6 +36,7 @@ namespace sneaker_heaven
         {
             GridLog.Visibility=Visibility.Visible;
             GridMain.Visibility=Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -108,34 +109,42 @@ namespace sneaker_heaven
             string username = (string)textbox3.Text;
             string email = (string)textbox4.Text;
             string jelszo = (string)textbox5.Text;
+            string jelszo2 = (string)textbox6.Text;
 
-            if(username == "" || email == "" ||  jelszo == "")
+            if (username == "" || email == "" || jelszo == "")
             {
                 MessageBox.Show("No data found");
             }
             else
             {
-                try
+                if (jelszo != jelszo2)
                 {
-
-                    Conn.Connection.Open();
-
-                    string sql = $"INSERT INTO `user`(`UserName`, `Email`, `Password`) VALUES ('{username}','{email}','{jelszo}')";
-
-                    MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
-                    cmd.ExecuteNonQuery();
-
-                    Conn.Connection.Close();
-
-                    MessageBox.Show("Sikeres Regisztráció");
-
-                    GridReg.Visibility = Visibility.Hidden;
-                    GridMain.Visibility = Visibility.Visible;
-
+                    MessageBox.Show("A két jelszó nem egyezik");
                 }
-                catch (Exception)
+                else
                 {
-                    MessageBox.Show("The database is not connected");
+                    try
+                    {
+
+                        Conn.Connection.Open();
+
+                        string sql = $"INSERT INTO `user`(`UserName`, `Email`, `Password`) VALUES ('{username}','{email}','{jelszo}')";
+
+                        MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+                        cmd.ExecuteNonQuery();
+
+                        Conn.Connection.Close();
+
+                        MessageBox.Show("Sikeres Regisztráció");
+
+                        GridReg.Visibility = Visibility.Hidden;
+                        GridMain.Visibility = Visibility.Visible;
+
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("The database is not connected");
+                    }
                 }
             }
         }
@@ -144,6 +153,7 @@ namespace sneaker_heaven
         {
             GridReg.Visibility = Visibility.Visible;
             GridMain.Visibility = Visibility.Hidden;
+            GridLog.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
