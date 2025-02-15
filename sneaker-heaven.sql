@@ -1,17 +1,13 @@
--- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
---
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Feb 14. 11:06
--- Kiszolgáló verziója: 10.4.20-MariaDB
--- PHP verzió: 7.3.29
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+DROP DATABASE IF EXISTS sneakerheaven;
+CREATE DATABASE IF NOT EXISTS sneakerheaven 
+CHARACTER SET utf8 
+COLLATE utf8_hungarian_ci;
 
+USE sneakerheaven;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
