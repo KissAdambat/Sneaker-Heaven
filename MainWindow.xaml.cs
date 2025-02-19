@@ -21,7 +21,7 @@ namespace sneaker_heaven
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        public static int accid = 0;
         internal static Connect Conn = new Connect();
 
         public MainWindow()
@@ -29,6 +29,8 @@ namespace sneaker_heaven
             InitializeComponent();
             GridLog.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            GridFej1.Visibility = Visibility.Hidden;
         }
 
 
@@ -52,7 +54,7 @@ namespace sneaker_heaven
             {
                 Conn.Connection.Open();
 
-                string sql = "SELECT `UserName`, `Password` FROM `user` WHERE 1";
+                string sql = "SELECT `ID`, `UserName`, `Password` FROM `user` WHERE 1";
 
                 MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
 
@@ -66,12 +68,13 @@ namespace sneaker_heaven
                 {
                     var felhasznalo = new
                     {
-                        UserNameAdatbazis = dr.GetString(0),
-                        JelszoAdatbazis = dr.GetString(1),
+                        UserNameAdatbazis = dr.GetString(1),
+                        JelszoAdatbazis = dr.GetString(2),
                     };
 
                     if (username == felhasznalo.UserNameAdatbazis && jelszo == felhasznalo.JelszoAdatbazis)
                     {
+                        accid = dr.GetInt32(0);
                         regisztralt = true;
                     }
 
@@ -85,7 +88,8 @@ namespace sneaker_heaven
                     MessageBox.Show("Sikeres Bejelentkezés");
                     GridLog.Visibility = Visibility.Hidden;
                     GridMain.Visibility = Visibility.Visible;
-                    //Grid2fej.Visibility = Visibility.Hidden;
+                    Grid2fej.Visibility = Visibility.Hidden;
+                    GridFej1.Visibility = Visibility.Visible;
                 }
                 else
                 {
@@ -139,6 +143,8 @@ namespace sneaker_heaven
 
                         GridReg.Visibility = Visibility.Hidden;
                         GridMain.Visibility = Visibility.Visible;
+                        Grid2fej.Visibility = Visibility.Hidden;
+                        GridFej1.Visibility = Visibility.Visible;
 
                     }
                     catch (Exception)
@@ -161,6 +167,78 @@ namespace sneaker_heaven
             GridReg.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
             GridLog.Visibility = Visibility.Hidden;
+        }
+
+        private void logo_Click(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Visible;
+            Conn.Connection.Open();
+
+            string sql = $"SELECT `UserName`, `Email`, `Password FROM `user` WHERE ID = '{accid}'; ";
+
+            MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+
+            dr.Read();
+
+            do
+            {
+                var felhasznalo = new
+                {
+                    Username = dr.GetString(0),
+                    Emaild = dr.GetString(1),
+                };
+
+                accname.Content = $"{felhasznalo.Username}";
+                accemail.Content = $"{felhasznalo.Emaild}";
+            }
+            while (dr.Read());
+
+
+            dr.Close();
+            Conn.Connection.Close();
+        }
+
+        private void passunlock_Click(object sender, RoutedEventArgs e)
+        {
+            Conn.Connection.Open();
+
+            string sql = $"SELECT `Password FROM `user` WHERE ID = {accid}; ";
+
+            MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+
+            dr.Read();
+
+            do
+            {
+                var felhasznalo = new
+                {
+                    Userpass = dr.GetString(0),
+                };
+
+                accpassword.Content = $"{felhasznalo.Userpass}";
+            }
+            while (dr.Read());
+
+
+            dr.Close();
+            Conn.Connection.Close();
+
+            passunlock.Visibility = Visibility.Hidden;
+            passlock.Visibility = Visibility.Visible;
+        }
+
+        private void passlock_Click(object sender, RoutedEventArgs e)
+        {
+            accpassword.Content = "********";
+            passlock.Visibility = Visibility.Hidden;
+            passunlock.Visibility = Visibility.Visible;
         }
     }
 }

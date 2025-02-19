@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sneaker_heaven"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Sneaker Heaven" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="123*"/>
@@ -25,12 +25,14 @@
             <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="330,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <Button x:Name="button3" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="330,246,0,0" VerticalAlignment="Top" Width="120" Click="button3_Click"/>
         </Grid>
-        <Grid x:Name="Grid2fej" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="31" Margin="11,7,0,0" VerticalAlignment="Top" Width="786" d:IsHidden="True">
+        <Grid x:Name="Grid2fej" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="31" Margin="11,7,0,0" VerticalAlignment="Top" Width="786">
             <Button x:Name="button1" Content="Login" HorizontalAlignment="Left" Margin="606,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button1_Click"/>
             <Button x:Name="button2" Content="Register" HorizontalAlignment="Left" Margin="694,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button2_Click"/>
             <Button Content="Home" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="88" Click="Button_Click_1"/>
         </Grid>
-        <Grid x:Name="GridMain" Grid.ColumnSpan="4" Margin="10,43,10,10"/>
+        <Grid x:Name="GridMain" Grid.ColumnSpan="4" Margin="10,43,10,10">
+            <Label x:Name="test" Content="girdmain" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
+        </Grid>
         <Grid x:Name="GridReg" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="78"/>
             <Label x:Name="label3" Content="Felhasználónév" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Width="112"/>
@@ -43,10 +45,39 @@
             <Label x:Name="label7" Content="Jelszó" HorizontalAlignment="Left" Margin="281,208,0,0" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="textbox6" HorizontalAlignment="Left" Margin="281,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058" TextChanged="TextBox_TextChanged"/>
         </Grid>
-        <Grid x:Name="GridFej1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="38" Margin="10,0,0,0" VerticalAlignment="Top" Width="780">
-            <Button x:Name="logo" Content="" HorizontalAlignment="Left" Margin="748,0,0,0" VerticalAlignment="Center" Width="22" Height="18" BorderBrush="{x:Null}">
+        <Grid x:Name="GridFej1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="38" Margin="10,0,0,0" VerticalAlignment="Top" Width="780" d:IsHidden="True">
+            <Button x:Name="logo" Content="" HorizontalAlignment="Left" Margin="739,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}" Click="logo_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/sneakerhead-vlw0ei79s3e0rmxi.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cart" Content="" HorizontalAlignment="Left" Margin="703,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/cart.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="like" Content="" HorizontalAlignment="Left" Margin="685,0,0,0" VerticalAlignment="Center" Width="13" Height="18" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/lkies.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="name" Content="Accaunt name :" HorizontalAlignment="Left" Margin="57,57,0,0" VerticalAlignment="Top" Width="121"/>
+            <Label x:Name="email" Content="Email :" HorizontalAlignment="Left" Margin="57,88,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="password" Content="Password :" HorizontalAlignment="Left" Margin="57,119,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="accname" HorizontalAlignment="Left" Margin="183,57,0,0" VerticalAlignment="Top" Width="159" Height="26"/>
+            <Label x:Name="accemail" HorizontalAlignment="Left" Margin="183,88,0,0" VerticalAlignment="Top" Width="159" Height="26"/>
+            <Label x:Name="accpassword" HorizontalAlignment="Left" Margin="183,119,0,0" VerticalAlignment="Top" Width="159" Height="26" Content="********"/>
+            <Button x:Name="passunlock" HorizontalAlignment="Left" Margin="353,119,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="23" Width="22" Click="passunlock_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/eye-43.png"/>
+                </Button.Background>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="92" Margin="564,57,0,0" VerticalAlignment="Top" Width="100" Source="/sneakerhead-vlw0ei79s3e0rmxi.jpg"/>
+            <Button x:Name="passlock" HorizontalAlignment="Left" Margin="353,119,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="23" Width="22" Click="passlock_Click" d:IsHidden="True">
+                <Button.Background>
+                    <ImageBrush ImageSource="/eyecross.png"/>
                 </Button.Background>
             </Button>
         </Grid>

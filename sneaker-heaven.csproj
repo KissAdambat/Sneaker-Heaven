@@ -151,5 +151,17 @@
   <ItemGroup>
     <Resource Include="sneakerhead-vlw0ei79s3e0rmxi.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lkies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="eye-43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="eyecross.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
