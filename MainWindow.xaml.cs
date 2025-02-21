@@ -34,14 +34,14 @@ namespace sneaker_heaven
         }
 
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e) ///login button
         {
             GridLog.Visibility=Visibility.Visible;
             GridMain.Visibility=Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void button3_Click(object sender, RoutedEventArgs e) ///registerbutton
         {
             string username = (string)textbox1.Text;
             string jelszo = (string)textbox2.Text;
@@ -115,7 +115,7 @@ namespace sneaker_heaven
             string jelszo = (string)textbox5.Text;
             string jelszo2 = (string)textbox6.Text;
 
-            if (username == "" || email == "" || jelszo == "")
+            if (username == "" || email == "" || jelszo == "" || !kukac())
             {
                 MessageBox.Show("No data found");
             }
@@ -142,9 +142,10 @@ namespace sneaker_heaven
                         MessageBox.Show("Sikeres Regisztráció");
 
                         GridReg.Visibility = Visibility.Hidden;
-                        GridMain.Visibility = Visibility.Visible;
-                        Grid2fej.Visibility = Visibility.Hidden;
-                        GridFej1.Visibility = Visibility.Visible;
+                        GridMain.Visibility = Visibility.Hidden;
+                        Grid2fej.Visibility = Visibility.Visible;
+                        GridFej1.Visibility = Visibility.Hidden;
+                        GridLog.Visibility = Visibility.Visible;
 
                     }
                     catch (Exception)
@@ -155,14 +156,31 @@ namespace sneaker_heaven
             }
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+
+        private bool kukac()
+        {
+            string email = (string)textbox4.Text;
+
+
+            foreach (char c in email)
+            {
+                if(c == '@')
+                {
+                    return true;
+                }
+               
+            }
+            return false;
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e) ///regisztráció button
         {
             GridReg.Visibility = Visibility.Visible;
             GridMain.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e) //home button
         {
             GridReg.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
@@ -175,7 +193,7 @@ namespace sneaker_heaven
             GridAccaunt.Visibility = Visibility.Visible;
             Conn.Connection.Open();
 
-            string sql = $"SELECT `UserName`, `Email`, `Password FROM `user` WHERE ID = '{accid}'; ";
+            string sql = $"SELECT `UserName`, `Email`, `Password` FROM `user` WHERE ID = '{accid}'; ";
 
             MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
 
@@ -200,13 +218,15 @@ namespace sneaker_heaven
 
             dr.Close();
             Conn.Connection.Close();
+
+            passlock.Visibility = Visibility.Hidden;
         }
 
         private void passunlock_Click(object sender, RoutedEventArgs e)
         {
             Conn.Connection.Open();
-
-            string sql = $"SELECT `Password FROM `user` WHERE ID = {accid}; ";
+            
+            string sql = $"SELECT `Password` FROM `user` WHERE ID = '{accid}'; ";
 
             MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
 
