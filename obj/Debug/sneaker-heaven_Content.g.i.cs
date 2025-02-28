@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("eyecross.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("af1.jpg")]
 
 

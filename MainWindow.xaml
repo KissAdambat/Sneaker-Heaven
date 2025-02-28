@@ -32,6 +32,9 @@
         </Grid>
         <Grid x:Name="GridMain" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="test" Content="girdmain" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
+            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
         </Grid>
         <Grid x:Name="GridReg" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="78"/>
@@ -51,7 +54,7 @@
                     <ImageBrush ImageSource="/sneakerhead-vlw0ei79s3e0rmxi.jpg"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="cart" Content="" HorizontalAlignment="Left" Margin="703,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}">
+            <Button x:Name="cart" Content="" HorizontalAlignment="Left" Margin="703,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}" Click="cart_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/cart.jpg"/>
                 </Button.Background>
@@ -61,8 +64,13 @@
                     <ImageBrush ImageSource="/lkies.jpg"/>
                 </Button.Background>
             </Button>
+            <Button x:Name="Men" Content="Men" HorizontalAlignment="Left" Margin="66,0,0,0" VerticalAlignment="Center" Width="51" Click="Men_Click_1"/>
+            <Button x:Name="Women" Content="Women" HorizontalAlignment="Left" Margin="122,0,0,0" VerticalAlignment="Center" Width="51" Click="Women_Click_1"/>
+            <Button x:Name="Kids" Content="Kids" HorizontalAlignment="Left" Margin="178,0,0,0" VerticalAlignment="Center" Width="51" Click="Kids_Click_1"/>
+            <Button x:Name="Discount" Content="Discounts" HorizontalAlignment="Left" Margin="234,0,0,0" VerticalAlignment="Center" Width="51" Click="Discount_Click_1"/>
+            <Button x:Name="Home" Content="Home" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="51" Click="Home_Click"/>
         </Grid>
-        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="4" Margin="10,43,10,10">
+        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="name" Content="Accaunt name :" HorizontalAlignment="Left" Margin="57,57,0,0" VerticalAlignment="Top" Width="121"/>
             <Label x:Name="email" Content="Email :" HorizontalAlignment="Left" Margin="57,88,0,0" VerticalAlignment="Top"/>
             <Label x:Name="password" Content="Password :" HorizontalAlignment="Left" Margin="57,119,0,0" VerticalAlignment="Top"/>
@@ -80,6 +88,42 @@
                     <ImageBrush ImageSource="/eyecross.png"/>
                 </Button.Background>
             </Button>
+            <Button x:Name="Newpass" Content="New password" HorizontalAlignment="Left" Margin="118,155,0,0" VerticalAlignment="Top" Click="Newpass_Click_1"/>
+            <TextBox x:Name="Pass2" HorizontalAlignment="Left" Margin="118,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="Pass1" HorizontalAlignment="Left" Margin="118,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="Updatepassword" Content="Update password&#xD;&#xA;" HorizontalAlignment="Left" Margin="118,283,0,0" VerticalAlignment="Top" Height="25" Click="Updatepassword_Click_1"/>
+            <Label x:Name="Uj2" Content="New password" HorizontalAlignment="Left" Margin="118,175,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label x:Name="Uj1" Content="New password again" HorizontalAlignment="Left" Margin="118,229,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="Logout" Content="Log out" HorizontalAlignment="Left" Margin="588,159,0,0" VerticalAlignment="Top" Width="51" Height="23" Click="Logout_Click"/>
+        </Grid>
+        <Grid x:Name="Gridferfi" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="test1" Content="ferfi" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
+            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
+        </Grid>
+        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="test2" Content="gyerek" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
+            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
+        </Grid>
+        <Grid x:Name="Gridno" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="test3" Content="no" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
+            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
+        </Grid>
+        <Grid x:Name="Gridakcios" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="test4" Content="akcio" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
+            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
+        </Grid>
+        <Grid x:Name="Gridkosar" Grid.ColumnSpan="4" Margin="10,43,10,10">
+            <Label x:Name="Cart" Content="Cart" HorizontalAlignment="Left" Height="37" Margin="272,20,0,0" VerticalAlignment="Top" Width="85" FontSize="24"/>
+            <Button x:Name="Pay" Content="Pay" HorizontalAlignment="Left" Margin="627,131,0,0" VerticalAlignment="Top" FontSize="24" Width="56"/>
+            <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Width="57" FontSize="18"/>
         </Grid>
 
     </Grid>

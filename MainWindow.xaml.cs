@@ -31,6 +31,16 @@ namespace sneaker_heaven
             GridReg.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             GridFej1.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Uj1.Visibility = Visibility.Hidden;
+            Uj2.Visibility = Visibility.Hidden;
+            Pass1.Visibility = Visibility.Hidden;
+            Pass2.Visibility = Visibility.Hidden;
+            Updatepassword.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
         }
 
 
@@ -85,7 +95,7 @@ namespace sneaker_heaven
                 if (regisztralt == true)
                 {
 
-                    MessageBox.Show("Sikeres Bejelentkezés");
+                    MessageBox.Show("Successful login");
                     GridLog.Visibility = Visibility.Hidden;
                     GridMain.Visibility = Visibility.Visible;
                     Grid2fej.Visibility = Visibility.Hidden;
@@ -93,7 +103,7 @@ namespace sneaker_heaven
                 }
                 else
                 {
-                    MessageBox.Show("Nincs felhasználó");
+                    MessageBox.Show("No user found");
                 }
 
                 dr.Close();
@@ -123,7 +133,7 @@ namespace sneaker_heaven
             {
                 if (jelszo != jelszo2)
                 {
-                    MessageBox.Show("A két jelszó nem egyezik");
+                    MessageBox.Show("The two passwords don't match");
                 }
                 else
                 {
@@ -139,7 +149,7 @@ namespace sneaker_heaven
 
                         Conn.Connection.Close();
 
-                        MessageBox.Show("Sikeres Regisztráció");
+                        MessageBox.Show("Successful register");
 
                         GridReg.Visibility = Visibility.Hidden;
                         GridMain.Visibility = Visibility.Hidden;
@@ -191,6 +201,10 @@ namespace sneaker_heaven
         {
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Visible;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
             Conn.Connection.Open();
 
             string sql = $"SELECT `UserName`, `Email`, `Password` FROM `user` WHERE ID = '{accid}'; ";
@@ -260,5 +274,191 @@ namespace sneaker_heaven
             passlock.Visibility = Visibility.Hidden;
             passunlock.Visibility = Visibility.Visible;
         }
+
+        private void Men_Click(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Visible;
+        }
+
+        private void Women_Click(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Visible; 
+        }
+
+        private void Kids_Click(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Visible; 
+        }
+
+        private void Discount_Click(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Visible; 
+        }
+
+        private void Newpass_Click(object sender, RoutedEventArgs e)
+        {
+            Uj1.Visibility = Visibility.Visible;
+            Uj2.Visibility = Visibility.Visible;
+            Pass1.Visibility = Visibility.Visible;
+            Pass2.Visibility = Visibility.Visible;
+            Updatepassword.Visibility = Visibility.Visible;
+        }
+
+        private void Updatepassword_Click(object sender, RoutedEventArgs e)
+        {
+
+            string jelszo1 = Pass1.Text;
+            string jelszo2 = Pass2.Text;
+
+            if (jelszo1 != jelszo2)
+            {
+                MessageBox.Show("The two passwords don't match");
+            }
+            else
+            {
+                Conn.Connection.Open();
+                string sql = $"UPDATE `user` SET `Password`='{jelszo1}' WHERE `ID` = '{accid}';";
+
+                MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+                cmd.ExecuteNonQuery();
+
+                Conn.Connection.Close();
+            }
+        }
+
+        private void Newpass_Click_1(object sender, RoutedEventArgs e)
+        {
+            Uj1.Visibility = Visibility.Visible;
+            Uj2.Visibility = Visibility.Visible;
+            Pass1.Visibility = Visibility.Visible;
+            Pass2.Visibility = Visibility.Visible;
+            Updatepassword.Visibility = Visibility.Visible;
+        }
+
+        private void Updatepassword_Click_1(object sender, RoutedEventArgs e)
+        {
+            string jelszo1 = Pass1.Text;
+            string jelszo2 = Pass2.Text;
+
+            if (jelszo1 != jelszo2)
+            {
+                MessageBox.Show("The two passwords don't match");
+            }
+            else
+            {
+                Conn.Connection.Open();
+                string sql = $"UPDATE `user` SET `Password`='{jelszo1}' WHERE `ID` = '{accid}';";
+
+                MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+                cmd.ExecuteNonQuery();
+
+                Conn.Connection.Close();
+
+                MessageBox.Show("Successful password update!");
+            }
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            GridMain.Visibility = Visibility.Visible;
+            GridAccaunt.Visibility = Visibility.Hidden;
+        }
+
+        private void Men_Click_1(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Visible;
+        }
+
+        private void Women_Click_1(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Visible;
+        }
+
+        private void Kids_Click_1(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Visible;
+        }
+
+        private void Discount_Click_1(object sender, RoutedEventArgs e)
+        {
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Visible;
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            GridMain.Visibility = Visibility.Visible;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            GridLog.Visibility = Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
+            GridFej1.Visibility = Visibility.Hidden;
+            Grid2fej.Visibility = Visibility.Visible;
+            MessageBox.Show("Logged out successfully!");
+        }
+
+        private void cart_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            GridMain.Visibility = Visibility.Visible;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            GridLog.Visibility = Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
+            GridFej1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Visible;
+        }
+
+        public int fizetendo = 0;
+
+        
     }
 }
