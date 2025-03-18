@@ -25,7 +25,7 @@ namespace sneaker_heaven
         internal static Connect Conn = new Connect();
         Dictionary<string, int> kosarcart = new Dictionary<string, int>() { };
         List<string> af1 = new List<string>() { "Triple White", "Triple Black" };
-        List<int> af1meret = new List<int>() { 37, 40, 42, 425 , 43, 46 };
+        List<double> af1meret = new List<double>() { 37, 40, 42, 42.5 , 43, 46 };
 
         public MainWindow()
         {
@@ -55,6 +55,7 @@ namespace sneaker_heaven
             GridLog.Visibility = Visibility.Visible;
             GridMain.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
+            
         }
 
         private void button3_Click(object sender, RoutedEventArgs e) ///registerbutton
@@ -289,6 +290,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -299,6 +301,7 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Visible;
         }
 
@@ -309,6 +312,7 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
         }
 
@@ -319,6 +323,7 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Visible;
         }
 
@@ -392,6 +397,7 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
+            GridCip1.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
         }
 
@@ -402,6 +408,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -412,6 +419,7 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Visible;
         }
 
@@ -422,6 +430,7 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
         }
 
@@ -432,6 +441,7 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Visible;
         }
 
@@ -446,6 +456,7 @@ namespace sneaker_heaven
             GridLog.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
             GridFej1.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Grid2fej.Visibility = Visibility.Visible;
             MessageBox.Show("Logged out successfully!");
         }
@@ -473,12 +484,6 @@ namespace sneaker_heaven
 
         public int fizetendo = 0;
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            GridMain.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
-        }
-
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -491,7 +496,7 @@ namespace sneaker_heaven
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            int mennyiseg = 0;
             string szin2 = Convert.ToString(szin.SelectedItem);
             int meret2 = Convert.ToInt32(meret.SelectedItem);
             if (szin2 == af1[0])
@@ -500,15 +505,17 @@ namespace sneaker_heaven
                 {
                     if (new1.IsChecked == true)
                     {
+                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price: 80€";
                         fizetendo = fizetendo + 80;
-                        kosarcart.Add("Air Force 1 Low '07", 80);
+                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 80);
                     }
                     else
                     {
+                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price: 60€";
                         fizetendo = fizetendo + 60;
-                        kosarcart.Add("Air Force 1 Low '07", 60);
+                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 60);
                     }
                 }
                 else
@@ -523,15 +530,17 @@ namespace sneaker_heaven
                 {
                     if (new1.IsChecked == true)
                     {
+                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price : 80€ ";
                         fizetendo = fizetendo + 80;
-                        kosarcart.Add("Air Force 1 Low '07", 80);
+                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 80);
                     }
                     else
                     {
-                        ar.Content = "Price: 60€" ;
+                        mennyiseg = mennyiseg + 1;
+                        ar.Content = "Price: 60€";
                         fizetendo = fizetendo + 60;
-                        kosarcart.Add("Air Force 1 Low '07", 60);
+                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 60);
                     }
                 }
                 else
@@ -539,6 +548,29 @@ namespace sneaker_heaven
                     ar.Content = "We dont have that size. Sorry";
                 }
             }
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            GridLog.Visibility = Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Uj1.Visibility = Visibility.Hidden;
+            Uj2.Visibility = Visibility.Hidden;
+            Pass1.Visibility = Visibility.Hidden;
+            Pass2.Visibility = Visibility.Hidden;
+            Updatepassword.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
         }
     }
 }

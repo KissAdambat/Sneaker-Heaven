@@ -166,5 +166,44 @@
   <ItemGroup>
     <Resource Include="af1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sneakerhavenlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="men.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="women.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cartnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="loign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="accname.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pass.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
