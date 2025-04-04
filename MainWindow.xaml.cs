@@ -399,6 +399,7 @@ namespace sneaker_heaven
             Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
             GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
         }
 
@@ -410,6 +411,7 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -421,6 +423,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Visible;
         }
 
@@ -432,6 +435,7 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
         }
 
@@ -443,6 +447,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Visible;
         }
 
@@ -458,6 +463,7 @@ namespace sneaker_heaven
             GridReg.Visibility = Visibility.Hidden;
             GridFej1.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Grid2fej.Visibility = Visibility.Visible;
             MessageBox.Show("Logged out successfully!");
         }

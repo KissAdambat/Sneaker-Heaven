@@ -21,7 +21,7 @@ namespace sneaker_heaven
             Host = "localhost";
             Database = "sneakerheaven";
             User = "root";
-            Password = "";
+            Password = "password";
 
             ConnectionString = "SERVER=" + Host + ";DATABASE=" + Database + ";UID=" + User + ";PASSWORD=" + Password + ";SslMode=None";
 

@@ -1,25 +1,3 @@
-<<<<<<< Updated upstream
-﻿sneaker-heaven
-
-
-winexe
-C#
-.cs
-C:\Users\Ádám\Source\Repos\Sneaker-Heaven\obj\Debug\
-sneaker_heaven
-none
-false
-DEBUG;TRACE
-C:\Users\Ádám\Source\Repos\Sneaker-Heaven\App.xaml
-1219584333
-
-61385411953
-33799007315
-MainWindow.xaml;
-
-False
-
-=======
 ﻿sneaker-heaven
 
 
@@ -34,10 +12,9 @@ DEBUG;TRACE
 C:\Users\Tanulo\Desktop\KM\Sneaker-Heaven\App.xaml
 1219584333
 
-7-696676665
+61385411953
 33-1985712153
 MainWindow.xaml;
 
-True
+False
 
->>>>>>> Stashed changes
