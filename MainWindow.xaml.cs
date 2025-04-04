@@ -23,8 +23,8 @@ namespace sneaker_heaven
     {
         public static int accid = 0;
         internal static Connect Conn = new Connect();
-        Dictionary<string, int> kosarcart = new Dictionary<string, int>() { };
-        List<string> af1 = new List<string>() { "Triple White", "Triple Black" };
+        List<string> kosarcart = new List<string>() {};
+        List<string> cipok = new List<string>() { "Triple White", "Triple Black" };
         List<double> af1meret = new List<double>() { 37, 40, 42, 42.5 , 43, 46 };
 
         public MainWindow()
@@ -45,7 +45,8 @@ namespace sneaker_heaven
             Updatepassword.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
-            szin.ItemsSource = af1;
+            szin.Items.Add(cipok[0]);
+            szin.Items.Add(cipok[1]);
             meret.ItemsSource = af1meret;
         }
 
@@ -473,14 +474,10 @@ namespace sneaker_heaven
             GridReg.Visibility = Visibility.Hidden;
             GridFej1.Visibility = Visibility.Visible;
             GridCip1.Visibility = Visibility.Hidden;
-            kosarlist.ItemsSource = GetKosarcart().Keys;
+            kosarlist.ItemsSource = kosarcart;
             Gridkosar.Visibility = Visibility.Visible;
         }
 
-        private Dictionary<string, int> GetKosarcart()
-        {
-            return kosarcart;
-        }
 
         public int fizetendo = 0;
 
@@ -496,26 +493,23 @@ namespace sneaker_heaven
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            int mennyiseg = 0;
             string szin2 = Convert.ToString(szin.SelectedItem);
             int meret2 = Convert.ToInt32(meret.SelectedItem);
-            if (szin2 == af1[0])
+            if (szin2 == cipok[0])
             {
                 if (meret2 == af1meret[0] || meret2 == af1meret[1] || meret2 == af1meret[2] || meret2 == af1meret[4])
                 {
                     if (new1.IsChecked == true)
                     {
-                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price: 80€";
                         fizetendo = fizetendo + 80;
-                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 80);
+                        kosarcart.Add($"Air Force 1 Low '07' 80€ ");
                     }
                     else
                     {
-                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price: 60€";
                         fizetendo = fizetendo + 60;
-                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 60);
+                        kosarcart.Add($"Air Force 1 Low '07' 60€");
                     }
                 }
                 else
@@ -530,17 +524,15 @@ namespace sneaker_heaven
                 {
                     if (new1.IsChecked == true)
                     {
-                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price : 80€ ";
                         fizetendo = fizetendo + 80;
-                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 80);
+                        kosarcart.Add($"Air Force 1 Low '07' 80€");
                     }
                     else
                     {
-                        mennyiseg = mennyiseg + 1;
                         ar.Content = "Price: 60€";
                         fizetendo = fizetendo + 60;
-                        kosarcart.Add($"Air Force 1 Low '07 {mennyiseg}", 60);
+                        kosarcart.Add($"Air Force 1 Low '07' 60€");
                     }
                 }
                 else

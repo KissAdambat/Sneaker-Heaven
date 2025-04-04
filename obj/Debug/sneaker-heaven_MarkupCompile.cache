@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿sneaker-heaven
 
 
@@ -18,3 +19,25 @@ MainWindow.xaml;
 
 False
 
+=======
+﻿sneaker-heaven
+
+
+winexe
+C#
+.cs
+C:\Users\Tanulo\Desktop\KM\Sneaker-Heaven\obj\Debug\
+sneaker_heaven
+none
+false
+DEBUG;TRACE
+C:\Users\Tanulo\Desktop\KM\Sneaker-Heaven\App.xaml
+1219584333
+
+7-696676665
+33-1985712153
+MainWindow.xaml;
+
+True
+
+>>>>>>> Stashed changes
