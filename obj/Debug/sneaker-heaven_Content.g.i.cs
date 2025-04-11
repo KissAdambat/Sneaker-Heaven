@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("af1.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("adidas%20yeezy%20foam%20runner%20onyx.png")]
 
 
