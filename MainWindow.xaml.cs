@@ -23,6 +23,11 @@ namespace sneaker_heaven
     {
         public static int accid = 0;
         internal static Connect Conn = new Connect();
+        List<string> kosarcart = new List<string>() {};
+        List<string> cipok = new List<string>() { "Triple White", "Triple Black", " Adidas Yeezy Foam runner clay taupe", "Adidas yeezy 350 v2 Carbon beluga","Adidas yeezy 350 v2 black red","Adidas yeezy 350 v2 zebra", "Adidas yeezy Foam Runner MX Granite","Adidas yeezy foam runner sand", "Jordan 1 Chicago Lost and Found", "Jordan 1 Low Travis Scott Black Phantom", "Jordan 1 Marina Blue", "Jordan 1 Reimagined", "Jordan 4 Black Cat", "Jordan 4 Bred Remaigned", "Jordan 4 Metallic Green", "Jordan 4 Military Black", "Jordan 4 White Oreo", "Nike Air Force 1 Low Triple Black", "Nike Air Force 1 Low Triple White", "adidas yeezy 350 v2 beluga reflective", "adidas yeezy 700 mnvn blue tint", "adidas yeezy 700 v3 copper fade"};
+        List<double> ferfimeretek = new List<double>() {39,40,41,42,43,44,45,46,47,48};
+        List<double> gyerekmeret = new List<double>() { 27, 28,29,30,31,32,33,34,35,36,37,38,39,40 };
+        List<double> nomeret = new List<double>() { 35.5,36,37,37.5,38,38.5,39,40,41,42 };
 
         public MainWindow()
         {
@@ -41,14 +46,19 @@ namespace sneaker_heaven
             Pass2.Visibility = Visibility.Hidden;
             Updatepassword.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            szin.Items.Add(cipok[0]);
+            szin.Items.Add(cipok[1]);
+            meret.ItemsSource = ferfimeretek;
         }
 
 
         private void button1_Click(object sender, RoutedEventArgs e) ///login button
         {
-            GridLog.Visibility=Visibility.Visible;
-            GridMain.Visibility=Visibility.Hidden;
+            GridLog.Visibility = Visibility.Visible;
+            GridMain.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
+            
         }
 
         private void button3_Click(object sender, RoutedEventArgs e) ///registerbutton
@@ -56,7 +66,7 @@ namespace sneaker_heaven
             string username = (string)textbox1.Text;
             string jelszo = (string)textbox2.Text;
 
-            if(username == "" || jelszo == "")
+            if (username == "" || jelszo == "")
             {
                 MessageBox.Show("No data found");
             }
@@ -110,7 +120,7 @@ namespace sneaker_heaven
 
                 Conn.Connection.Close();
             }
-           
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -174,11 +184,11 @@ namespace sneaker_heaven
 
             foreach (char c in email)
             {
-                if(c == '@')
+                if (c == '@')
                 {
                     return true;
                 }
-               
+
             }
             return false;
         }
@@ -205,6 +215,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Conn.Connection.Open();
 
             string sql = $"SELECT `UserName`, `Email`, `Password` FROM `user` WHERE ID = '{accid}'; ";
@@ -239,7 +250,7 @@ namespace sneaker_heaven
         private void passunlock_Click(object sender, RoutedEventArgs e)
         {
             Conn.Connection.Open();
-            
+
             string sql = $"SELECT `Password` FROM `user` WHERE ID = '{accid}'; ";
 
             MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
@@ -282,6 +293,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -292,7 +304,8 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
-            Gridno.Visibility = Visibility.Visible; 
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Visible;
         }
 
         private void Kids_Click(object sender, RoutedEventArgs e)
@@ -302,7 +315,8 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
-            Gridgyerek.Visibility = Visibility.Visible; 
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Visible;
         }
 
         private void Discount_Click(object sender, RoutedEventArgs e)
@@ -312,7 +326,8 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Visible; 
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Visible;
         }
 
         private void Newpass_Click(object sender, RoutedEventArgs e)
@@ -385,6 +400,8 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
         }
 
@@ -395,6 +412,8 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -405,6 +424,8 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Visible;
         }
 
@@ -415,6 +436,8 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
         }
 
@@ -425,6 +448,8 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Visible;
         }
 
@@ -439,6 +464,8 @@ namespace sneaker_heaven
             GridLog.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
             GridFej1.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
             Grid2fej.Visibility = Visibility.Visible;
             MessageBox.Show("Logged out successfully!");
         }
@@ -449,16 +476,68 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
-            GridMain.Visibility = Visibility.Visible;
+            GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
-            GridFej1.Visibility = Visibility.Hidden;
+            GridFej1.Visibility = Visibility.Visible;
+            GridCip1.Visibility = Visibility.Hidden;
+            kosarlist.ItemsSource = kosarcart;
             Gridkosar.Visibility = Visibility.Visible;
         }
 
+
         public int fizetendo = 0;
 
-        
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void meret_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            string szin2 = Convert.ToString(szin.SelectedItem);
+            int meret2 = Convert.ToInt32(meret.SelectedItem);
+            if (new1.IsChecked == true)
+            {
+                ar.Content = "Price: 80€";
+                fizetendo = fizetendo + 80;
+                kosarcart.Add($"Air Force 1 Low '07' 80€ ");
+            }
+            else
+            {
+                ar.Content = "Price: 60€";
+                fizetendo = fizetendo + 60;
+                kosarcart.Add($"Air Force 1 Low '07' 60€");
+            }
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            GridLog.Visibility = Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            Uj1.Visibility = Visibility.Hidden;
+            Uj2.Visibility = Visibility.Hidden;
+            Pass1.Visibility = Visibility.Hidden;
+            Pass2.Visibility = Visibility.Hidden;
+            Updatepassword.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
     }
 }

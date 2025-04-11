@@ -5,79 +5,110 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sneaker_heaven"
         mc:Ignorable="d"
-        Title="Sneaker Heaven" Height="450" Width="800">
+        Title="Sneaker Heaven" Height="450" Width="800" Background="#FF5A0707">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="123*"/>
-            <ColumnDefinition Width="171*"/>
-            <ColumnDefinition Width="128*"/>
-            <ColumnDefinition Width="501*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="370*"/>
         </Grid.ColumnDefinitions>
-        <Grid x:Name="GridLog" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="386" Margin="10,38,0,0" VerticalAlignment="Top" Width="780" d:IsHidden="True">
+        <Grid x:Name="GridLog" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="386" Margin="10,38,0,0" VerticalAlignment="Top" Width="780" d:IsHidden="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="329*"/>
                 <ColumnDefinition Width="61*"/>
             </Grid.ColumnDefinitions>
-            <Label x:Name="label" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="349,63,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="label1" Content="Felhasználónév" HorizontalAlignment="Left" Margin="330,120,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="label" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="340,61,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="label1" Content="Felhasználónév" HorizontalAlignment="Left" Margin="330,120,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" FontFamily="Tarzan"/>
             <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="330,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="label2" Content="Jelszó" HorizontalAlignment="Left" Margin="330,174,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="label2" Content="Jelszó" HorizontalAlignment="Left" Margin="330,174,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" FontFamily="Tarzan"/>
             <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="330,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Button x:Name="button3" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="330,246,0,0" VerticalAlignment="Top" Width="120" Click="button3_Click"/>
+            <Button x:Name="button3" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="330,246,0,0" VerticalAlignment="Top" Width="120" Click="button3_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
         </Grid>
-        <Grid x:Name="Grid2fej" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="31" Margin="11,7,0,0" VerticalAlignment="Top" Width="786" d:IsHidden="True">
-            <Button x:Name="button1" Content="Login" HorizontalAlignment="Left" Margin="606,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button1_Click"/>
-            <Button x:Name="button2" Content="Register" HorizontalAlignment="Left" Margin="694,0,0,0" VerticalAlignment="Center" Width="88" Height="20" Click="button2_Click"/>
-            <Button Content="Home" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="88" Click="Button_Click_1"/>
+        <Grid x:Name="Grid2fej" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="800" d:IsHidden="True">
+            <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="644,0,0,0" VerticalAlignment="Center" Width="78" Height="42" Click="button1_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/loign.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button2" HorizontalAlignment="Left" Margin="727,0,0,0" VerticalAlignment="Center" Width="73" Height="42" Click="button2_Click" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/resiter.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="62" Click="Button_Click_1" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="42">
+                <Button.Background>
+                    <ImageBrush ImageSource="/logo2.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
-        <Grid x:Name="GridMain" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="test" Content="girdmain" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
-            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
-            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
-            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
+        <Grid x:Name="GridMain" Grid.ColumnSpan="5" Margin="0,43,0,0" d:IsHidden="True">
+            <Grid.Background>
+                <ImageBrush ImageSource="/sneakerhavenlogo.png"/>
+            </Grid.Background>
         </Grid>
-        <Grid x:Name="GridReg" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="78"/>
-            <Label x:Name="label3" Content="Felhasználónév" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Width="112"/>
-            <Label x:Name="label4" Content="Email" HorizontalAlignment="Left" Margin="281,105,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.536,-0.114"/>
-            <Label x:Name="label5" Content="Jelszó" HorizontalAlignment="Left" Margin="281,154,0,0" VerticalAlignment="Top" Width="120"/>
+        <Grid x:Name="GridReg" Grid.ColumnSpan="5" Margin="64,43,64,10" d:IsHidden="True">
+            <Label x:Name="label6" Content="Regisztráció" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="78" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="label3" Content="Felhasználónév" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Width="112" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="label4" Content="Email" HorizontalAlignment="Left" Margin="281,105,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.536,-0.114" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="label5" Content="Jelszó" HorizontalAlignment="Left" Margin="281,154,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" FontFamily="Tarzan"/>
             <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="281,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058"/>
             <TextBox x:Name="textbox4" HorizontalAlignment="Left" Margin="281,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058"/>
             <TextBox x:Name="textbox5" HorizontalAlignment="Left" Margin="281,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058" TextChanged="TextBox_TextChanged"/>
-            <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="281,262,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
-            <Label x:Name="label7" Content="Jelszó" HorizontalAlignment="Left" Margin="281,208,0,0" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Regisztráció" HorizontalAlignment="Left" Margin="281,262,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="label7" Content="Jelszó" HorizontalAlignment="Left" Margin="281,208,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" FontFamily="Tarzan"/>
             <TextBox x:Name="textbox6" HorizontalAlignment="Left" Margin="281,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.058" TextChanged="TextBox_TextChanged"/>
         </Grid>
-        <Grid x:Name="GridFej1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="38" Margin="10,0,0,0" VerticalAlignment="Top" Width="780">
+        <Grid x:Name="GridFej1" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="43" Margin="10,0,0,0" VerticalAlignment="Top" Width="780">
             <Button x:Name="logo" Content="" HorizontalAlignment="Left" Margin="739,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}" Click="logo_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/sneakerhead-vlw0ei79s3e0rmxi.jpg"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="cart" Content="" HorizontalAlignment="Left" Margin="703,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}" Click="cart_Click">
+            <Button x:Name="cart" Content="" HorizontalAlignment="Left" Margin="679,0,0,0" VerticalAlignment="Center" Width="55" Height="44" BorderBrush="{x:Null}" Click="cart_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="/cart.jpg"/>
+                    <ImageBrush ImageSource="/cartnew.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="like" Content="" HorizontalAlignment="Left" Margin="685,0,0,0" VerticalAlignment="Center" Width="13" Height="18" BorderBrush="{x:Null}">
+            <Button x:Name="Men" Content="" HorizontalAlignment="Left" Margin="259,0,0,0" VerticalAlignment="Center" Width="46" Click="Men_Click_1" BorderBrush="{x:Null}" Height="44">
                 <Button.Background>
-                    <ImageBrush ImageSource="/lkies.jpg"/>
+                    <ImageBrush ImageSource="/men.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="Men" Content="Men" HorizontalAlignment="Left" Margin="66,0,0,0" VerticalAlignment="Center" Width="51" Click="Men_Click_1"/>
-            <Button x:Name="Women" Content="Women" HorizontalAlignment="Left" Margin="122,0,0,0" VerticalAlignment="Center" Width="51" Click="Women_Click_1"/>
-            <Button x:Name="Kids" Content="Kids" HorizontalAlignment="Left" Margin="178,0,0,0" VerticalAlignment="Center" Width="51" Click="Kids_Click_1"/>
-            <Button x:Name="Discount" Content="Discounts" HorizontalAlignment="Left" Margin="234,0,0,0" VerticalAlignment="Center" Width="51" Click="Discount_Click_1"/>
-            <Button x:Name="Home" Content="Home" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="51" Click="Home_Click"/>
+            <Button x:Name="Women" Content="" HorizontalAlignment="Left" Margin="316,0,0,0" VerticalAlignment="Center" Width="58" Click="Women_Click_1" BorderBrush="{x:Null}" Height="44">
+                <Button.Background>
+                    <ImageBrush ImageSource="/women.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Kids" Content="" HorizontalAlignment="Left" Margin="379,0,0,0" VerticalAlignment="Center" Width="58" Click="Kids_Click_1" BorderBrush="{x:Null}" Height="44">
+                <Button.Background>
+                    <ImageBrush ImageSource="/kids.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Discount" Content="" HorizontalAlignment="Left" Margin="442,0,0,0" VerticalAlignment="Center" Width="56" Click="Discount_Click_1" BorderBrush="{x:Null}" Height="44">
+                <Button.Background>
+                    <ImageBrush ImageSource="/disc.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Home" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="65" Click="Home_Click" BorderBrush="{x:Null}" Height="44" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/logo2.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
-        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="name" Content="Accaunt name :" HorizontalAlignment="Left" Margin="57,57,0,0" VerticalAlignment="Top" Width="121"/>
-            <Label x:Name="email" Content="Email :" HorizontalAlignment="Left" Margin="57,88,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="password" Content="Password :" HorizontalAlignment="Left" Margin="57,119,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="accname" HorizontalAlignment="Left" Margin="183,57,0,0" VerticalAlignment="Top" Width="159" Height="26"/>
-            <Label x:Name="accemail" HorizontalAlignment="Left" Margin="183,88,0,0" VerticalAlignment="Top" Width="159" Height="26"/>
-            <Label x:Name="accpassword" HorizontalAlignment="Left" Margin="183,119,0,0" VerticalAlignment="Top" Width="159" Height="26" Content="********"/>
-            <Button x:Name="passunlock" HorizontalAlignment="Left" Margin="353,119,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="23" Width="22" Click="passunlock_Click">
+        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="name" Content="Account name: " HorizontalAlignment="Left" Margin="54,44,0,0" VerticalAlignment="Top" Width="112" Height="30" FontFamily="Tarzan" Foreground="Black"/>
+            <Label x:Name="email" Content="Email:" HorizontalAlignment="Left" Margin="54,74,0,0" VerticalAlignment="Top" Width="87" Height="26" FontFamily="Tarzan">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+            <Label x:Name="password" Content="Password: " HorizontalAlignment="Left" Margin="54,103,0,0" VerticalAlignment="Top" Width="104" Height="30" Foreground="Black" FontFamily="Tarzan"/>
+            <Label x:Name="accname" HorizontalAlignment="Left" Margin="171,47,0,0" VerticalAlignment="Top" Width="159" Height="25"/>
+            <Label x:Name="accemail" HorizontalAlignment="Left" Margin="171,77,0,0" VerticalAlignment="Top" Width="159" Height="26"/>
+            <Label x:Name="accpassword" HorizontalAlignment="Left" Margin="171,108,0,0" VerticalAlignment="Top" Width="160" Height="26" Content="********"/>
+            <Button x:Name="passunlock" HorizontalAlignment="Left" Margin="336,111,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Height="22" Width="22" Click="passunlock_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/eye-43.png"/>
                 </Button.Background>
@@ -88,42 +119,73 @@
                     <ImageBrush ImageSource="/eyecross.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="Newpass" Content="New password" HorizontalAlignment="Left" Margin="118,155,0,0" VerticalAlignment="Top" Click="Newpass_Click_1"/>
-            <TextBox x:Name="Pass2" HorizontalAlignment="Left" Margin="118,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="Pass1" HorizontalAlignment="Left" Margin="118,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Button x:Name="Updatepassword" Content="Update password&#xD;&#xA;" HorizontalAlignment="Left" Margin="118,283,0,0" VerticalAlignment="Top" Height="25" Click="Updatepassword_Click_1"/>
-            <Label x:Name="Uj2" Content="New password" HorizontalAlignment="Left" Margin="118,175,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label x:Name="Uj1" Content="New password again" HorizontalAlignment="Left" Margin="118,229,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="Logout" Content="Log out" HorizontalAlignment="Left" Margin="588,159,0,0" VerticalAlignment="Top" Width="51" Height="23" Click="Logout_Click"/>
+            <Button x:Name="Newpass" Content="New password" HorizontalAlignment="Left" Margin="118,144,0,0" VerticalAlignment="Top" Click="Newpass_Click_1" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <TextBox x:Name="Pass2" HorizontalAlignment="Left" Margin="347,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="Pass1" HorizontalAlignment="Left" Margin="347,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="Updatepassword" Content="Update password&#xD;&#xA;" HorizontalAlignment="Left" Margin="347,292,0,0" VerticalAlignment="Top" Height="25" Click="Updatepassword_Click_1" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="Uj2" Content="New password" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" Height="26" FontFamily="Tarzan"/>
+            <Label x:Name="Uj1" Content="New password again" HorizontalAlignment="Left" Margin="341,243,0,0" VerticalAlignment="Top" FontFamily="Tarzan"/>
+            <Button x:Name="Logout" Content="Log out" HorizontalAlignment="Left" Margin="588,159,0,0" VerticalAlignment="Top" Width="60" Height="23" Click="Logout_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
         </Grid>
-        <Grid x:Name="Gridferfi" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="test1" Content="ferfi" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
-            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
-            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
-            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
+        <Grid x:Name="Gridferfi" Grid.ColumnSpan="5" Margin="10,43,10,10">
+            <Image HorizontalAlignment="Left" Height="100" Margin="17,10,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
+            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,123,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Click="Button_Click_2"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="158,30,0,0" VerticalAlignment="Top" Width="100" Source="/adidas yeezy 350 v2 beluga reflective.webp" RenderTransformOrigin="0.085,0.401"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="284,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas yeezy 350 v2 black red.webp"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="409,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas yeezy 350 v2 zebra.webp"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="528,30,0,0" VerticalAlignment="Top" Width="100" Source="/adidas yeezy 700 v3 copper fade.webp" RenderTransformOrigin="0.365,0.484"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="643,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas Yeezy Foam runner clay taupe.webp"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="23,175,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas Yeezy Foam Runner Onyx.png"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="158,175,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 1 Chicago Lost and Found.webp" RenderTransformOrigin="-0.135,-1.412"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="284,175,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 1 Low Travis Scott Black Phantom.webp"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="409,175,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Bred Remaigned.webp"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="528,175,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Military Black.webp"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="643,175,0,0" VerticalAlignment="Top" Width="100" Source="/Nike Air Force 1 Low Triple White.webp"/>
+            <Label Content="Adidas yeezy 350 v2 black red" HorizontalAlignment="Left" Margin="150,105,0,0" VerticalAlignment="Top" Width="170" Height="30"/>
+            <Label Content="Purchase" HorizontalAlignment="Left" Margin="186,136,0,0" VerticalAlignment="Top"/>
+            <Label Content="Purchase" HorizontalAlignment="Left" Margin="305,135,0,0" VerticalAlignment="Top"/>
+            <Label Content="Purchase" HorizontalAlignment="Left" Margin="430,136,0,0" VerticalAlignment="Top"/>
+            <Label Content="Purchase" HorizontalAlignment="Left" Margin="549,136,0,0" VerticalAlignment="Top" Width="59"/>
+            <Label Content="Purchase" HorizontalAlignment="Left" Margin="671,136,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="test2" Content="gyerek" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
             <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
         </Grid>
-        <Grid x:Name="Gridno" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="Gridno" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="test3" Content="no" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
             <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
         </Grid>
-        <Grid x:Name="Gridakcios" Grid.ColumnSpan="4" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="Gridakcios" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="test4" Content="akcio" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
             <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
         </Grid>
-        <Grid x:Name="Gridkosar" Grid.ColumnSpan="4" Margin="10,43,10,10">
-            <Label x:Name="Cart" Content="Cart" HorizontalAlignment="Left" Height="37" Margin="272,20,0,0" VerticalAlignment="Top" Width="85" FontSize="24"/>
-            <Button x:Name="Pay" Content="Pay" HorizontalAlignment="Left" Margin="627,131,0,0" VerticalAlignment="Top" FontSize="24" Width="56"/>
-            <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Width="57" FontSize="18"/>
+        <Grid x:Name="Gridkosar" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="Cart" Content="Cart" HorizontalAlignment="Right" Height="37" Margin="0,20,423,0" VerticalAlignment="Top" Width="85" FontSize="24" FontFamily="Tarzan"/>
+            <Button x:Name="Pay" Content="Pay" HorizontalAlignment="Left" Margin="627,131,0,0" VerticalAlignment="Top" FontSize="24" Width="56" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Width="79" FontSize="18" Click="Delete_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <ListBox x:Name="kosarlist" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,664,195" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="fizetendoosszeg" Content="osszeg" HorizontalAlignment="Left" Margin="595,89,0,0" VerticalAlignment="Top" Width="137" FontSize="20" FontFamily="Tarzan"/>
+        </Grid>
+        <Grid x:Name="GridCip1" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Button Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <ComboBox x:Name="szin" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar" Content="Price: 000000" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan"/>
+            <CheckBox x:Name="new1" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan"/>
         </Grid>
 
     </Grid>

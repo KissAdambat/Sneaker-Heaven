@@ -139,6 +139,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="adidas yeezy 350 v2 beluga reflective.webp" />
+    <Resource Include="Adidas yeezy 350 v2 black red.webp" />
+    <Resource Include="Adidas yeezy 350 v2 zebra.webp" />
+    <Resource Include="adidas yeezy 700 v3 copper fade.webp" />
+    <Resource Include="Adidas Yeezy Foam runner clay taupe.webp" />
+    <Resource Include="Jordan 1 Chicago Lost and Found.webp" />
+    <Resource Include="Jordan 1 Low Travis Scott Black Phantom.webp" />
+    <Resource Include="Jordan 4 Bred Remaigned.webp" />
+    <Resource Include="Jordan 4 Military Black.webp" />
+    <Resource Include="Nike Air Force 1 Low Triple White.webp" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -165,6 +175,48 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="af1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sneakerhavenlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="men.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="women.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cartnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="loign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="accname.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Adidas Yeezy Foam Runner Onyx.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
