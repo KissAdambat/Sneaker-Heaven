@@ -62,7 +62,8 @@ INSERT INTO `user` (`ID`, `UserName`, `Email`, `Password`) VALUES
 (25, 'omilne6', 'jotter6@skype.com', 'hS7&T4YI/j_a_'),
 (26, 'icasaroli7', 'mhayers7@amazon.co.jp', 'nR13OeXXzJm@hP&'),
 (27, 'hbilton8', 'sbrayley8@artisteer.com', 'rV0jE5ELn'),
-(28, 'tsugarman9', 'kdavidai9@go.com', 'aS5qMPWzJYRGW');
+(28, 'admin', 'admin@sneakerheaven.com', 'alma'),
+(29, 'tsugarman9', 'kdavidai9@go.com', 'aS5qMPWzJYRGW');
 
 --
 -- Indexek a kiírt táblákhoz
