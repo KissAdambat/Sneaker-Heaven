@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,6 +48,8 @@ namespace sneaker_heaven
             Updatepassword.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
+            devbutton.Visibility = Visibility.Hidden;
             szin.Items.Add(cipok[0]);
             szin.Items.Add(cipok[1]);
             meret.ItemsSource = ferfimeretek;
@@ -81,6 +84,9 @@ namespace sneaker_heaven
                 MySqlDataReader dr = cmd.ExecuteReader();
 
                 bool regisztralt = false;
+                bool admin = false;
+                string adminnev = "admin";
+                string adminjel = "alma";
 
                 dr.Read();
 
@@ -96,6 +102,10 @@ namespace sneaker_heaven
                     {
                         accid = dr.GetInt32(0);
                         regisztralt = true;
+                        if (username == adminnev && jelszo == adminjel)
+                        {
+                            admin = true;
+                        }
                     }
 
 
@@ -105,11 +115,24 @@ namespace sneaker_heaven
                 if (regisztralt == true)
                 {
 
-                    MessageBox.Show("Successful login");
-                    GridLog.Visibility = Visibility.Hidden;
-                    GridMain.Visibility = Visibility.Visible;
-                    Grid2fej.Visibility = Visibility.Hidden;
-                    GridFej1.Visibility = Visibility.Visible;
+                    if (admin == true)
+                    {
+                        MessageBox.Show("Successful login as an admin");
+                        GridLog.Visibility = Visibility.Hidden;
+                        GridMain.Visibility = Visibility.Visible;
+                        Grid2fej.Visibility = Visibility.Hidden;
+                        GridFej1.Visibility = Visibility.Visible;
+                        devbutton.Visibility = Visibility.Visible;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Successful login");
+                        GridLog.Visibility = Visibility.Hidden;
+                        GridMain.Visibility = Visibility.Visible;
+                        Grid2fej.Visibility = Visibility.Hidden;
+                        GridFej1.Visibility = Visibility.Visible;
+                        devbutton.Visibility = Visibility.Hidden;
+                    }
                 }
                 else
                 {
@@ -215,6 +238,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Conn.Connection.Open();
 
@@ -294,6 +318,7 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -305,6 +330,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Visible;
         }
 
@@ -316,6 +342,7 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
         }
 
@@ -327,6 +354,7 @@ namespace sneaker_heaven
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Visible;
         }
 
@@ -402,6 +430,7 @@ namespace sneaker_heaven
             GridMain.Visibility = Visibility.Visible;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
         }
 
@@ -414,6 +443,7 @@ namespace sneaker_heaven
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Visible;
         }
 
@@ -426,6 +456,7 @@ namespace sneaker_heaven
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Visible;
         }
 
@@ -438,6 +469,7 @@ namespace sneaker_heaven
             Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
         }
 
@@ -450,6 +482,7 @@ namespace sneaker_heaven
             Gridno.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Gridakcios.Visibility = Visibility.Visible;
         }
 
@@ -466,6 +499,7 @@ namespace sneaker_heaven
             GridFej1.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             Grid2fej.Visibility = Visibility.Visible;
             MessageBox.Show("Logged out successfully!");
         }
@@ -482,7 +516,7 @@ namespace sneaker_heaven
             GridReg.Visibility = Visibility.Hidden;
             GridFej1.Visibility = Visibility.Visible;
             GridCip1.Visibility = Visibility.Hidden;
-            kosarlist.ItemsSource = kosarcart;
+            GridDev.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Visible;
         }
 
@@ -501,25 +535,46 @@ namespace sneaker_heaven
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            string szin2 = Convert.ToString(szin.SelectedItem);
-            int meret2 = Convert.ToInt32(meret.SelectedItem);
             if (new1.IsChecked == true)
             {
-                ar.Content = "Price: 80€";
-                fizetendo = fizetendo + 80;
-                kosarcart.Add($"Air Force 1 Low '07' 80€ ");
+                kosarlist.Items.Add($"Air Force 1 Low '07' 80 €");
+                fizetendo += 80;
             }
             else
             {
-                ar.Content = "Price: 60€";
-                fizetendo = fizetendo + 60;
-                kosarcart.Add($"Air Force 1 Low '07' 60€");
+                kosarlist.Items.Add($"Air Force 1 Low '07' 60 €");
+                fizetendo += 60;
             }
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            
+            string sor = kosarlist.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(sor))
+            {
+                MessageBox.Show("Nincs kiválasztott elem.");
+                return;
+            }
+            string[] reszek = sor.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            int ar = 0;
+            for (int i = reszek.Length - 1; i >= 0; i--)
+            {
+                string csakSzam = new string(reszek[i].Where(char.IsDigit).ToArray());
+
+                if (int.TryParse(csakSzam, out ar))
+                {
+                    break;
+                }
+            }
+            if (ar == 0)
+            {
+                MessageBox.Show("Nem sikerült az árat értelmezni.");
+                return;
+            }
+            fizetendo -= ar;
+            kosarlist.Items.Remove(sor);
+            fizetendoosszeg.Content = $"Fizetendő: {fizetendo} €";
+            MessageBox.Show("Sikeres törlés");
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -537,7 +592,133 @@ namespace sneaker_heaven
             Pass2.Visibility = Visibility.Hidden;
             Updatepassword.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
+            GridDev.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void devbutton_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridakcios.Visibility = Visibility.Hidden;
+            GridMain.Visibility = Visibility.Hidden;
+            GridAccaunt.Visibility = Visibility.Hidden;
+            GridLog.Visibility = Visibility.Hidden;
+            GridReg.Visibility = Visibility.Hidden;
+            GridFej1.Visibility = Visibility.Visible;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridkosar.Visibility = Visibility.Hidden;
+            Conn.Connection.Open();
+
+            string sql = "SELECT `ID`, `UserName`, `Email`, `Password` FROM `user` WHERE 1";
+
+            MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+
+            MySqlDataReader dr = cmd.ExecuteReader();
+
+
+            dr.Read();
+
+            do
+            {
+                var felhasznalo = new
+                {
+                    IDAdatbazis = dr.GetInt32(0),
+                    Felhasznalonev = dr.GetString(1),
+                    email = dr.GetString(2),
+                    Jelszo = dr.GetString(3),
+                };
+
+                acclist.Items.Add(felhasznalo.IDAdatbazis + "," + felhasznalo.Felhasznalonev + "," + felhasznalo.Jelszo + "," + felhasznalo.email);
+
+            }
+            while (dr.Read());
+
+
+            dr.Close();
+            Conn.Connection.Close();
+            GridDev.Visibility = Visibility.Visible;
+        }
+
+        private void accdel_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (acclist.SelectedItem == null)
+                {
+                    MessageBox.Show("Nincs kiválasztott elem.");
+                    return;
+                }
+
+                string sor = acclist.SelectedItem.ToString();
+                string[] felvag = sor.Split(',');
+
+                if (felvag.Length == 0 || string.IsNullOrWhiteSpace(felvag[0]))
+                {
+                    MessageBox.Show("Hibás vagy hiányzó ID.");
+                    return;
+                }
+
+                string id = felvag[0].Trim();
+
+                Conn.Connection.Open();
+
+                string sql = "DELETE FROM `user` WHERE id = @id";
+                using (MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Sikeres törlés.");
+                        acclist.Items.Remove(sor);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nem található ilyen ID.");
+                    }
+                }
+
+                Conn.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Hiba történt: {ex.Message}");
+            }
+            finally
+            {
+                if (Conn.Connection.State == ConnectionState.Open)
+                {
+                    Conn.Connection.Close();
+                }
+            }
+        }
+
+        private void allclear_Click(object sender, RoutedEventArgs e)
+        {
+            if (kosarlist.Items.Count == 0)
+            {
+                MessageBox.Show("A kosár már üres.");
+                return;
+            }
+            kosarlist.Items.Clear();
+            fizetendo = 0;
+            fizetendoosszeg.Content = "Fizetendő: 0 €";
+            MessageBox.Show("A kosár kiürítve.");
+        }
+
+        private void new1_Click(object sender, RoutedEventArgs e)
+        {
+            if (new1.IsChecked == true)
+            {
+                ar.Content = $"80€";
+            }
+            else
+            {
+                ar.Content = $"60€";
+            }
         }
     }
 }
