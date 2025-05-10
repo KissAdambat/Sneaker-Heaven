@@ -150,12 +150,7 @@
             <Label Content="Purchase" HorizontalAlignment="Left" Margin="549,136,0,0" VerticalAlignment="Top" Width="59"/>
             <Label Content="Purchase" HorizontalAlignment="Left" Margin="671,136,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="test2" Content="gyerek" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
-            <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
-            <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
-            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
-        </Grid>
+        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="5" Margin="10,43,10,10"/>
         <Grid x:Name="Gridno" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="test3" Content="no" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
@@ -168,12 +163,12 @@
             <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52"/>
         </Grid>
-        <Grid x:Name="Gridkosar" Grid.ColumnSpan="5" Margin="10,43,10,10">
+        <Grid x:Name="Gridkosar" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="Cart" Content="Cart" HorizontalAlignment="Right" Height="37" Margin="0,20,423,0" VerticalAlignment="Top" Width="85" FontSize="24" FontFamily="Tarzan"/>
-            <Button x:Name="Pay" Content="Pay" HorizontalAlignment="Left" Margin="627,131,0,0" VerticalAlignment="Top" FontSize="24" Width="56" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <Button x:Name="Pay" Content="Check out" HorizontalAlignment="Left" Margin="595,131,0,0" VerticalAlignment="Top" FontSize="24" Width="175" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan" Click="Pay_Click"/>
             <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="79" FontSize="18" Click="Delete_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <ListBox x:Name="kosarlist" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,571,195" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
-            <Label x:Name="fizetendoosszeg" Content="osszeg" HorizontalAlignment="Left" Margin="595,89,0,0" VerticalAlignment="Top" Width="137" FontSize="20" FontFamily="Tarzan"/>
+            <Label x:Name="fizetendoosszeg" Content="To be paid:" HorizontalAlignment="Left" Margin="513,89,0,0" VerticalAlignment="Top" Width="257" FontSize="20" FontFamily="Tarzan"/>
             <Button x:Name="allclear" Content="Drop Cart" HorizontalAlignment="Left" Margin="114,191,0,0" VerticalAlignment="Top" Width="95" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan" FontSize="18" Click="allclear_Click"/>
         </Grid>
         <Grid x:Name="GridCip1" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
@@ -195,6 +190,33 @@
             <Label x:Name="fizetendoosszeg1" Content="osszeg" HorizontalAlignment="Left" Margin="595,89,0,0" VerticalAlignment="Top" Width="137" FontSize="20" FontFamily="Tarzan"/>
             <ListBox x:Name="acclist" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,584,176" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}"/>
             <Button x:Name="accdel" Content="Delete" HorizontalAlignment="Left" Margin="64,210,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan" FontSize="18" Click="accdel_Click"/>
+        </Grid>
+        <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+            <Label x:Name="checkoutinfo" Content="Billing Information" HorizontalAlignment="Left" Margin="49,35,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="20"/>
+            <Label x:Name="lname" Content="Last Name" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="LNametext" HorizontalAlignment="Left" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label Content="First Name" HorizontalAlignment="Left" Margin="160,77,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="FNameText" HorizontalAlignment="Left" Margin="160,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="lname_Copy" Content="Address" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="address" HorizontalAlignment="Left" Margin="10,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="lname_Copy1" Content="Address 2 " HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="address2" HorizontalAlignment="Left" Margin="10,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="lname_Copy2" Content="Country" HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="10,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="lname_Copy3" Content="State" HorizontalAlignment="Left" Margin="93,257,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="state" HorizontalAlignment="Left" Margin="93,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="lname_Copy4" Content="Postal Code" HorizontalAlignment="Left" Margin="172,257,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="postalcode" HorizontalAlignment="Left" Margin="172,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.403,-0.009" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="checkoutinfo_Copy" Content="Card Information" HorizontalAlignment="Left" Margin="351,35,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="20"/>
+            <Label Content="Name on card" HorizontalAlignment="Left" Margin="351,77,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="cardname" HorizontalAlignment="Left" Margin="351,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label Content="Bank card number" HorizontalAlignment="Left" Margin="351,137,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="cardnumbers" HorizontalAlignment="Left" Margin="351,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label Content="Expiration date" HorizontalAlignment="Left" Margin="351,197,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="lejaratiido" HorizontalAlignment="Left" Margin="351,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Label x:Name="cvv" Content="CVV" HorizontalAlignment="Left" Margin="351,257,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16"/>
+            <TextBox x:Name="cvv1" HorizontalAlignment="Left" Margin="353,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
+            <Button x:Name="pay2" Content="Pay" HorizontalAlignment="Left" Margin="280,340,0,0" VerticalAlignment="Top" FontFamily="Tarzan" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Click="pay2_Click"/>
         </Grid>
 
     </Grid>
