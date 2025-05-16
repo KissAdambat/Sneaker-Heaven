@@ -786,5 +786,71 @@ namespace sneaker_heaven
                 MessageBox.Show("All data is correct. Thank you for your purchase");
             }
         }
+
+        private void Air_force1_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Adidas_Yeezy_Boost350_V2_Beluga_Reflective_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Adidas_Yeezy_Boost_350_V2_Bred_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Adidas_Yeezy_Boost_350_V2_Zebra_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Adidas_Yeezy_700_V3_Copper_Fade_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Adidas_Yeezy_Foam_Runner_Sand_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Adidas_Yeezy_Foam_Runner_Onyx_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Air_Jordan_1_Retro_High_OG_Chicago_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Air_Jordan_1_Low_Travis_Scott_Black_Phantom_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Air_Jordan_4_Bred_Remaigned_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Air_jordan_4_Military_Black_Click(object sender, RoutedEventArgs e)
+        {
+            Gridferfi.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Visible;
+        }
     }
 }

@@ -128,10 +128,9 @@
             <Label x:Name="Uj1" Content="New password again" HorizontalAlignment="Left" Margin="341,243,0,0" VerticalAlignment="Top" FontFamily="Tarzan"/>
             <Button x:Name="Logout" Content="Log out" HorizontalAlignment="Left" Margin="588,159,0,0" VerticalAlignment="Top" Width="60" Height="23" Click="Logout_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
         </Grid>
-        <Grid x:Name="Gridferfi" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="Gridferfi" Grid.ColumnSpan="5" Margin="10,43,10,10">
             <Image HorizontalAlignment="Left" Height="100" Margin="17,10,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
             <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,123,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan"/>
-            <Button Content="Purchase" HorizontalAlignment="Left" Margin="41,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="52" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Click="Button_Click_2"/>
             <Image HorizontalAlignment="Left" Height="60" Margin="158,30,0,0" VerticalAlignment="Top" Width="100" Source="/adidas yeezy 350 v2 beluga reflective.webp" RenderTransformOrigin="0.085,0.401"/>
             <Image HorizontalAlignment="Left" Height="60" Margin="284,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas yeezy 350 v2 black red.webp"/>
             <Image HorizontalAlignment="Left" Height="60" Margin="409,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas yeezy 350 v2 zebra.webp"/>
@@ -143,14 +142,20 @@
             <Image HorizontalAlignment="Left" Height="60" Margin="409,175,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Bred Remaigned.webp"/>
             <Image HorizontalAlignment="Left" Height="61" Margin="528,175,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Military Black.webp"/>
             <Image HorizontalAlignment="Left" Height="60" Margin="643,175,0,0" VerticalAlignment="Top" Width="100" Source="/Nike Air Force 1 Low Triple White.webp"/>
-            <Label Content="Adidas yeezy 350 v2 black red" HorizontalAlignment="Left" Margin="150,105,0,0" VerticalAlignment="Top" Width="170" Height="30"/>
-            <Label Content="Purchase" HorizontalAlignment="Left" Margin="186,136,0,0" VerticalAlignment="Top"/>
-            <Label Content="Purchase" HorizontalAlignment="Left" Margin="305,135,0,0" VerticalAlignment="Top"/>
-            <Label Content="Purchase" HorizontalAlignment="Left" Margin="430,136,0,0" VerticalAlignment="Top"/>
-            <Label Content="Purchase" HorizontalAlignment="Left" Margin="549,136,0,0" VerticalAlignment="Top" Width="59"/>
-            <Label Content="Purchase" HorizontalAlignment="Left" Margin="671,136,0,0" VerticalAlignment="Top"/>
+            <Label Content="Adidas yeezy 350 v2 black red" HorizontalAlignment="Left" Margin="249,105,0,0" VerticalAlignment="Top" Width="170" Height="30"/>
+            <Button x:Name="Air_force1" Content="Purchase" HorizontalAlignment="Left" Margin="47,147,0,0" VerticalAlignment="Top" Click="Air_force1_Click"/>
+            <Button x:Name="Adidas_Yeezy_Boost350_V2_Beluga_Reflective" Content="Purchase" HorizontalAlignment="Left" Margin="188,147,0,0" VerticalAlignment="Top" Click="Adidas_Yeezy_Boost350_V2_Beluga_Reflective_Click"/>
+            <Button x:Name="Adidas_Yeezy_Boost_350_V2_Bred" Content="Purchase" HorizontalAlignment="Left" Margin="308,142,0,0" VerticalAlignment="Top" Click="Adidas_Yeezy_Boost_350_V2_Bred_Click"/>
+            <Button x:Name="Adidas_Yeezy_Boost_350_V2_Zebra" Content="Purchase" HorizontalAlignment="Left" Margin="450,142,0,0" VerticalAlignment="Top" Click="Adidas_Yeezy_Boost_350_V2_Zebra_Click"/>
+            <Button x:Name="Adidas_Yeezy_700_V3_Copper_Fade" Content="Purchase" HorizontalAlignment="Left" Margin="552,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.192,1.214" Click="Adidas_Yeezy_700_V3_Copper_Fade_Click"/>
+            <Button x:Name="Adidas_Yeezy_Foam_Runner_Sand" Content="Purchase" HorizontalAlignment="Left" Margin="679,142,0,0" VerticalAlignment="Top" Click="Adidas_Yeezy_Foam_Runner_Sand_Click"/>
+            <Button x:Name="Adidas_Yeezy_Foam_Runner_Onyx" Content="Purchase" HorizontalAlignment="Left" Margin="49,280,0,0" VerticalAlignment="Top" Click="Adidas_Yeezy_Foam_Runner_Onyx_Click"/>
+            <Button x:Name="Air_Jordan_1_Retro_High_OG_Chicago" Content="Purchase" HorizontalAlignment="Left" Margin="182,280,0,0" VerticalAlignment="Top" Click="Air_Jordan_1_Retro_High_OG_Chicago_Click" RenderTransformOrigin="0.315,1.355"/>
+            <Button x:Name="Air_Jordan_1_Low_Travis_Scott_Black_Phantom" Content="Purchase" HorizontalAlignment="Left" Margin="308,280,0,0" VerticalAlignment="Top" Click="Air_Jordan_1_Low_Travis_Scott_Black_Phantom_Click" RenderTransformOrigin="0.342,0.764"/>
+            <Button x:Name="Air_Jordan_4_Bred_Remaigned" Content="Purchase" HorizontalAlignment="Left" Margin="433,280,0,0" VerticalAlignment="Top" Click="Air_Jordan_4_Bred_Remaigned_Click" RenderTransformOrigin="0.388,1.515"/>
+            <Button x:Name="Air_jordan_4_Military_Black" Content="Purchase" HorizontalAlignment="Left" Margin="552,280,0,0" VerticalAlignment="Top" Click="Air_jordan_4_Military_Black_Click" RenderTransformOrigin="0.377,1.234"/>
         </Grid>
-        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="5" Margin="10,43,10,10"/>
+        <Grid x:Name="Gridgyerek" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True"/>
         <Grid x:Name="Gridno" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="test3" Content="no" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
@@ -185,11 +190,16 @@
             <CheckBox x:Name="new1" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click"/>
         </Grid>
         <Grid x:Name="GridDev" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
-            <Label x:Name="Cart1" Content="Cart" HorizontalAlignment="Right" Height="37" Margin="0,20,423,0" VerticalAlignment="Top" Width="85" FontSize="24" FontFamily="Tarzan"/>
-            <Button x:Name="Pay1" Content="Pay" HorizontalAlignment="Left" Margin="627,131,0,0" VerticalAlignment="Top" FontSize="24" Width="56" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
-            <Label x:Name="fizetendoosszeg1" Content="osszeg" HorizontalAlignment="Left" Margin="595,89,0,0" VerticalAlignment="Top" Width="137" FontSize="20" FontFamily="Tarzan"/>
+            <Label x:Name="Cart1" Content="Dev view" HorizontalAlignment="Right" Height="37" Margin="0,20,400,0" VerticalAlignment="Top" Width="108" FontSize="24" FontFamily="Tarzan"/>
             <ListBox x:Name="acclist" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,584,176" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}"/>
             <Button x:Name="accdel" Content="Delete" HorizontalAlignment="Left" Margin="64,210,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan" FontSize="18" Click="accdel_Click"/>
+            <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="430,-4,47,0" Height="179" VerticalAlignment="Top" Background="{x:Null}"/>
+            <Button x:Name="Deletecip" Content="Delete" HorizontalAlignment="Left" Margin="439,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.06,0.997" Width="47" Background="{x:Null}"/>
+            <Button x:Name="Updateused" Content="Update" HorizontalAlignment="Left" Margin="534,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.878,1.037" Width="52" Background="{x:Null}"/>
+            <Button x:Name="Updatenew" Content="Update" HorizontalAlignment="Left" Margin="659,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.533,2.387" Width="46" Background="{x:Null}"/>
+            <Label Content=" Delete shoes" HorizontalAlignment="Left" Margin="422,191,0,0" VerticalAlignment="Top"/>
+            <Label Content="Update used price" HorizontalAlignment="Left" Margin="508,192,0,0" VerticalAlignment="Top"/>
+            <Label Content="Update new price" HorizontalAlignment="Left" Margin="630,192,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="checkoutinfo" Content="Billing Information" HorizontalAlignment="Left" Margin="49,35,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="20"/>
