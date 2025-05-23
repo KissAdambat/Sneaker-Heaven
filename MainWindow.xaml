@@ -194,19 +194,19 @@
             <Label x:Name="ar" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
             <CheckBox x:Name="new1" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
         </Grid>
-        <Grid x:Name="GridDev" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="GridDev" Grid.ColumnSpan="5" Margin="10,43,10,10">
             <Label x:Name="Cart1" Content="Dev view" HorizontalAlignment="Right" Height="37" Margin="0,20,400,0" VerticalAlignment="Top" Width="108" FontSize="24" FontFamily="Tarzan" Foreground="White"/>
             <ListBox x:Name="acclist" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,584,176" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Foreground="White"/>
             <Button x:Name="accdel" Content="Delete" HorizontalAlignment="Left" Margin="64,210,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan" FontSize="18" Click="accdel_Click" Foreground="White"/>
-            <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="430,-4,47,0" Height="179" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
-            <Button x:Name="Deletecip" Content="Delete" HorizontalAlignment="Left" Margin="439,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.06,0.997" Width="47" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
-            <Button x:Name="Updateused" Content="Update" HorizontalAlignment="Left" Margin="534,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.878,1.037" Width="52" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+            <ListBox x:Name="shoelist" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="430,-4,47,0" Height="179" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+            <Button x:Name="Deletecip" Content="Delete" HorizontalAlignment="Left" Margin="439,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.06,0.997" Width="47" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Deletecip_Click"/>
+            <Button x:Name="Updateused" Content="Update" HorizontalAlignment="Left" Margin="534,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.878,1.037" Width="52" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Updateused_Click"/>
             <Button x:Name="Updatenew" Content="Update" HorizontalAlignment="Left" Margin="659,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.533,2.387" Width="46" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
             <Label Content=" Delete shoes" HorizontalAlignment="Left" Margin="422,191,0,0" VerticalAlignment="Top" Foreground="White"/>
             <Label Content="Update used price" HorizontalAlignment="Left" Margin="508,192,0,0" VerticalAlignment="Top" Foreground="White"/>
             <Label Content="Update new price" HorizontalAlignment="Left" Margin="630,192,0,0" VerticalAlignment="Top" Foreground="White"/>
         </Grid>
-        <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10">
+        <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="checkoutinfo" Content="Billing Information" HorizontalAlignment="Left" Margin="49,35,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="20" Foreground="White"/>
             <Label x:Name="lname" Content="Last Name" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16" Foreground="White"/>
             <TextBox x:Name="LNametext" HorizontalAlignment="Left" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>

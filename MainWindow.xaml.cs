@@ -654,6 +654,38 @@ namespace sneaker_heaven
 
             dr.Close();
             Conn.Connection.Close();
+
+            Conn.Connection.Open();
+
+            string sql2 = "SELECT * FROM `shoes` WHERE 1";
+
+            MySqlCommand cmd2 = new MySqlCommand(sql, Conn.Connection);
+
+            MySqlDataReader dr2 = cmd.ExecuteReader();
+
+
+            dr.Read();
+
+            do
+            {
+                var felhasznalo2 = new
+                {
+                    brand = dr.GetInt32(0),
+                    model = dr.GetString(1),
+                    color = dr.GetString(2),
+                    newprice = dr.GetString(3),
+                    usedprice = dr.GetString(4),
+                };
+
+                shoelist.Items.Add(felhasznalo2.brand + "," + felhasznalo2.model + "," + felhasznalo2.color + "," + felhasznalo2.newprice + "," + felhasznalo2.usedprice);
+
+            }
+            while (dr.Read());
+
+
+            dr.Close();
+            Conn.Connection.Close();
+
             GridDev.Visibility = Visibility.Visible;
         }
 
@@ -851,6 +883,87 @@ namespace sneaker_heaven
         {
             Gridferfi.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Visible;
+        }
+
+        private void Deletecip_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (shoelist.SelectedItem == null)
+                {
+                    MessageBox.Show("No account selected.");
+                    return;
+                }
+
+                string sor = acclist.SelectedItem.ToString();
+                string[] felvag = sor.Split(',');
+
+                if (felvag.Length == 0 || string.IsNullOrWhiteSpace(felvag[0]))
+                {
+                    MessageBox.Show("Incorrect or missing ID.");
+                    return;
+                }
+
+                string id = felvag[2].Trim();
+
+                Conn.Connection.Open();
+
+                string sql = "DELETE FROM `shoes` WHERE id = @id";
+                using (MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Deleted successfully.");
+                        acclist.Items.Remove(sor);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No ID found.");
+                    }
+                }
+
+                Conn.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Something went wrong: {ex.Message}");
+            }
+            finally
+            {
+                if (Conn.Connection.State == ConnectionState.Open)
+                {
+                    Conn.Connection.Close();
+                }
+            }
+        }
+
+        private void Updateused_Click(object sender, RoutedEventArgs e)
+        {
+
+            string sor = acclist.SelectedItem.ToString();
+            string[] felvag = sor.Split(',');
+            string id = felvag[2].Trim();
+            string price = felvag[4].Trim();
+            if (shoelist.SelectedItem == null)
+            {
+                MessageBox.Show("No account selected.");
+                return;
+            }
+            else
+            {
+                Conn.Connection.Open();
+                string sql = $"UPDATE `shoes` SET `Usedprice`='[value-5]' WHERE id = id@";
+
+                MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+                cmd.ExecuteNonQuery();
+
+                Conn.Connection.Close();
+
+                MessageBox.Show("Successful password update!");
+            }
         }
     }
 }
