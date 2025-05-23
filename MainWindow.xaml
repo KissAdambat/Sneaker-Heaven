@@ -43,7 +43,7 @@
                 </Button.Background>
             </Button>
         </Grid>
-        <Grid x:Name="GridMain" Grid.ColumnSpan="5" Margin="0,43,0,0">
+        <Grid x:Name="GridMain" Grid.ColumnSpan="5" Margin="0,43,0,0" d:IsHidden="True">
             <Grid.Background>
                 <ImageBrush ImageSource="/sneakerhavenlogo.png"/>
             </Grid.Background>
@@ -127,7 +127,7 @@
             <Label x:Name="Uj1" Content="New password again" HorizontalAlignment="Left" Margin="341,243,0,0" VerticalAlignment="Top" FontFamily="Tarzan"/>
             <Button x:Name="Logout" Content="Log out" HorizontalAlignment="Left" Margin="588,159,0,0" VerticalAlignment="Top" Width="60" Height="23" Click="Logout_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
         </Grid>
-        <Grid x:Name="Gridferfi" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="Gridferfi" Grid.ColumnSpan="5" Margin="10,43,10,10">
             <Label x:Name="test1" Content="ferfi" HorizontalAlignment="Left" Margin="400,201,0,0" VerticalAlignment="Top"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="17,38,0,0" VerticalAlignment="Top" Width="100" Source="/af1.jpg"/>
             <Label Content="Air force 1 " HorizontalAlignment="Left" Margin="33,138,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan"/>
