@@ -651,20 +651,12 @@ namespace sneaker_heaven
             }
             while (dr.Read());
 
-
             dr.Close();
-            Conn.Connection.Close();
-
-            Conn.Connection.Open();
 
             string sql2 = "SELECT * FROM `shoes` WHERE 1";
-
-            MySqlCommand cmd2 = new MySqlCommand(sql, Conn.Connection);
+            MySqlCommand cmd2 = new MySqlCommand(sql2, Conn.Connection);
 
             MySqlDataReader dr2 = cmd.ExecuteReader();
-
-
-            dr.Read();
 
             do
             {
@@ -680,12 +672,14 @@ namespace sneaker_heaven
                 shoelist.Items.Add(felhasznalo2.brand + "," + felhasznalo2.model + "," + felhasznalo2.color + "," + felhasznalo2.newprice + "," + felhasznalo2.usedprice);
 
             }
-            while (dr.Read());
+            while (dr2.Read());
 
 
-            dr.Close();
+            dr2.Close();
             Conn.Connection.Close();
-
+            newpriceforused.Visibility = Visibility.Hidden;
+            newpricefrused.Visibility = Visibility.Hidden;
+            newpricelabel.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Visible;
         }
 
@@ -895,7 +889,7 @@ namespace sneaker_heaven
                     return;
                 }
 
-                string sor = acclist.SelectedItem.ToString();
+                string sor = shoelist.SelectedItem.ToString();
                 string[] felvag = sor.Split(',');
 
                 if (felvag.Length == 0 || string.IsNullOrWhiteSpace(felvag[0]))
@@ -943,19 +937,26 @@ namespace sneaker_heaven
         private void Updateused_Click(object sender, RoutedEventArgs e)
         {
 
-            string sor = acclist.SelectedItem.ToString();
+            newpriceforused.Visibility = Visibility.Visible;
+            newpricefrused.Visibility = Visibility.Visible;
+            newpricelabel.Visibility = Visibility.Visible;
+        }
+
+        private void newpriceforused_Click(object sender, RoutedEventArgs e)
+        {
+            string sor = shoelist.SelectedItem.ToString();
             string[] felvag = sor.Split(',');
             string id = felvag[2].Trim();
-            string price = felvag[4].Trim();
+            string price = newpriceforused.Content.ToString();
             if (shoelist.SelectedItem == null)
             {
-                MessageBox.Show("No account selected.");
+                MessageBox.Show("No shoe selected.");
                 return;
             }
             else
             {
                 Conn.Connection.Open();
-                string sql = $"UPDATE `shoes` SET `Usedprice`='[value-5]' WHERE id = id@";
+                string sql = $"UPDATE `shoes` SET `Usedprice`='{price}' WHERE id = id@";
 
                 MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
                 cmd.ExecuteNonQuery();

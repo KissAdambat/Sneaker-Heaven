@@ -205,6 +205,9 @@
             <Label Content=" Delete shoes" HorizontalAlignment="Left" Margin="422,191,0,0" VerticalAlignment="Top" Foreground="White"/>
             <Label Content="Update used price" HorizontalAlignment="Left" Margin="508,192,0,0" VerticalAlignment="Top" Foreground="White"/>
             <Label Content="Update new price" HorizontalAlignment="Left" Margin="630,192,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <Label x:Name="newpricelabel" Content="New price" HorizontalAlignment="Left" Margin="528,258,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <Button x:Name="newpriceforused" Content="Update" HorizontalAlignment="Left" Margin="534,315,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" Width="52" Click="newpriceforused_Click"/>
+            <TextBox x:Name="newpricefrused" HorizontalAlignment="Left" Margin="508,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" Background="{x:Null}" SelectionBrush="{x:Null}" Foreground="White" BorderBrush="#FFAC4141"/>
         </Grid>
         <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="checkoutinfo" Content="Billing Information" HorizontalAlignment="Left" Margin="49,35,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="20" Foreground="White"/>
