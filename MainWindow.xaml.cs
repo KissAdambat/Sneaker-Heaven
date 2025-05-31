@@ -41,7 +41,6 @@ namespace sneaker_heaven
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             Uj1.Visibility = Visibility.Hidden;
             Uj2.Visibility = Visibility.Hidden;
             Pass1.Visibility = Visibility.Hidden;
@@ -52,9 +51,27 @@ namespace sneaker_heaven
             GridDev.Visibility = Visibility.Hidden;
             GridCheckOut.Visibility = Visibility.Hidden;
             devbutton.Visibility = Visibility.Hidden;
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             szin.Items.Add(cipok[0]);
             szin.Items.Add(cipok[1]);
             meret.ItemsSource = ferfimeretek;
+            meret1.ItemsSource = ferfimeretek;
+            meret2.ItemsSource = ferfimeretek;
+            meret3.ItemsSource = ferfimeretek;
+            meret4.ItemsSource = ferfimeretek;
+            meret5.ItemsSource = ferfimeretek;
+            meret6.ItemsSource = ferfimeretek;
+            meret7.ItemsSource = ferfimeretek;
+            meret8.ItemsSource = ferfimeretek;
+            meret9.ItemsSource = ferfimeretek;
         }
 
 
@@ -69,7 +86,7 @@ namespace sneaker_heaven
         private void button3_Click(object sender, RoutedEventArgs e) ///registerbutton
         {
             string username = (string)textbox1.Text;
-            string jelszo = (string)textbox2.Text;
+            string jelszo = (string)passs.Password;
 
             if (username == "" || jelszo == "")
             {
@@ -148,17 +165,12 @@ namespace sneaker_heaven
 
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string username = (string)textbox3.Text;
             string email = (string)textbox4.Text;
-            string jelszo = (string)textbox5.Text;
-            string jelszo2 = (string)textbox6.Text;
+            string jelszo = (string)pass1.Password;
+            string jelszo2 = (string)pass2.Password;
 
             if (username == "" || email == "" || jelszo == "" || !kukac())
             {
@@ -234,12 +246,20 @@ namespace sneaker_heaven
 
         private void logo_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Visible;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             GridCheckOut.Visibility = Visibility.Hidden;
@@ -315,11 +335,19 @@ namespace sneaker_heaven
 
         private void Men_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
             GridCheckOut.Visibility = Visibility.Hidden;
@@ -328,11 +356,19 @@ namespace sneaker_heaven
 
         private void Women_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
             GridCheckOut.Visibility = Visibility.Hidden;
@@ -341,28 +377,23 @@ namespace sneaker_heaven
 
         private void Kids_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
             GridCheckOut.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Visible;
-        }
-
-        private void Discount_Click(object sender, RoutedEventArgs e)
-        {
-            GridMain.Visibility = Visibility.Hidden;
-            GridAccaunt.Visibility = Visibility.Hidden;
-            Gridferfi.Visibility = Visibility.Hidden;
-            Gridgyerek.Visibility = Visibility.Hidden;
-            Gridno.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Hidden;
-            GridDev.Visibility = Visibility.Hidden;
-            GridCheckOut.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Visible;
         }
 
         private void Newpass_Click(object sender, RoutedEventArgs e)
@@ -430,10 +461,18 @@ namespace sneaker_heaven
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
@@ -444,11 +483,19 @@ namespace sneaker_heaven
 
         private void Men_Click_1(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
@@ -458,11 +505,19 @@ namespace sneaker_heaven
 
         private void Women_Click_1(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
@@ -472,11 +527,19 @@ namespace sneaker_heaven
 
         private void Kids_Click_1(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Hidden;
@@ -486,24 +549,23 @@ namespace sneaker_heaven
 
         private void Discount_Click_1(object sender, RoutedEventArgs e)
         {
-            GridMain.Visibility = Visibility.Hidden;
-            GridAccaunt.Visibility = Visibility.Hidden;
-            Gridferfi.Visibility = Visibility.Hidden;
-            Gridgyerek.Visibility = Visibility.Hidden;
-            Gridno.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Hidden;
-            Gridkosar.Visibility = Visibility.Hidden;
-            GridDev.Visibility = Visibility.Hidden;
-            GridCheckOut.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Visible;
+
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Visible;
             GridAccaunt.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
@@ -519,10 +581,18 @@ namespace sneaker_heaven
 
         private void cart_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
@@ -532,6 +602,7 @@ namespace sneaker_heaven
             GridDev.Visibility = Visibility.Hidden;
             GridCheckOut.Visibility = Visibility.Hidden;
             Gridkosar.Visibility = Visibility.Visible;
+            fizetendoosszeg.Content = $"To be paid: {fizetendo} €";
         }
 
 
@@ -593,13 +664,21 @@ namespace sneaker_heaven
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
             GridReg.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             Uj1.Visibility = Visibility.Hidden;
             Uj2.Visibility = Visibility.Hidden;
             Pass1.Visibility = Visibility.Hidden;
@@ -613,10 +692,18 @@ namespace sneaker_heaven
 
         private void devbutton_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
@@ -656,30 +743,30 @@ namespace sneaker_heaven
             string sql2 = "SELECT * FROM `shoes` WHERE 1";
             MySqlCommand cmd2 = new MySqlCommand(sql2, Conn.Connection);
 
-            MySqlDataReader dr2 = cmd.ExecuteReader();
+            MySqlDataReader dr2 = cmd2.ExecuteReader();
 
-            do
+            while (dr2.Read())
             {
                 var felhasznalo2 = new
                 {
-                    brand = dr.GetInt32(0),
-                    model = dr.GetString(1),
-                    color = dr.GetString(2),
-                    newprice = dr.GetString(3),
-                    usedprice = dr.GetString(4),
+                    brand = dr2.GetString(0),
+                    model = dr2.GetString(1),
+                    color = dr2.GetString(2),
+                    newprice = dr2.GetInt64(3),
+                    usedprice = dr2.GetInt64(4),
                 };
 
                 shoelist.Items.Add(felhasznalo2.brand + "," + felhasznalo2.model + "," + felhasznalo2.color + "," + felhasznalo2.newprice + "," + felhasznalo2.usedprice);
-
             }
-            while (dr2.Read());
-
 
             dr2.Close();
             Conn.Connection.Close();
             newpriceforused.Visibility = Visibility.Hidden;
             newpricefrused.Visibility = Visibility.Hidden;
             newpricelabel.Visibility = Visibility.Hidden;
+            newpricefrnew.Visibility = Visibility.Hidden;
+            newpricelabel2.Visibility = Visibility.Hidden;
+            newpricefornew.Visibility = Visibility.Hidden;
             GridDev.Visibility = Visibility.Visible;
         }
 
@@ -765,10 +852,18 @@ namespace sneaker_heaven
 
         private void Pay_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             Gridgyerek.Visibility = Visibility.Hidden;
             Gridno.Visibility = Visibility.Hidden;
-            Gridakcios.Visibility = Visibility.Hidden;
             GridMain.Visibility = Visibility.Hidden;
             GridAccaunt.Visibility = Visibility.Hidden;
             GridLog.Visibility = Visibility.Hidden;
@@ -815,68 +910,177 @@ namespace sneaker_heaven
 
         private void Air_force1_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
             GridCip1.Visibility = Visibility.Visible;
         }
 
         private void Adidas_Yeezy_Boost350_V2_Beluga_Reflective_Click(object sender, RoutedEventArgs e)
         {
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip2.Visibility = Visibility.Visible;
         }
 
         private void Adidas_Yeezy_Boost_350_V2_Bred_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip3.Visibility = Visibility.Visible;
         }
 
         private void Adidas_Yeezy_Boost_350_V2_Zebra_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip4.Visibility = Visibility.Visible;
         }
 
         private void Adidas_Yeezy_700_V3_Copper_Fade_Click(object sender, RoutedEventArgs e)
         {
-            Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+
         }
 
         private void Adidas_Yeezy_Foam_Runner_Sand_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip5.Visibility = Visibility.Visible;
         }
 
         private void Adidas_Yeezy_Foam_Runner_Onyx_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip6.Visibility = Visibility.Visible;
         }
 
         private void Air_Jordan_1_Retro_High_OG_Chicago_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip7.Visibility = Visibility.Visible;
         }
 
         private void Air_Jordan_1_Low_Travis_Scott_Black_Phantom_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip8.Visibility = Visibility.Visible;
         }
 
         private void Air_Jordan_4_Bred_Remaigned_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            GridCip10.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip9.Visibility = Visibility.Visible;
         }
 
         private void Air_jordan_4_Military_Black_Click(object sender, RoutedEventArgs e)
         {
+            GridCip2.Visibility = Visibility.Hidden;
+            GridCip3.Visibility = Visibility.Hidden;
+            GridCip4.Visibility = Visibility.Hidden;
+            GridCip5.Visibility = Visibility.Hidden;
+            GridCip6.Visibility = Visibility.Hidden;
+            GridCip7.Visibility = Visibility.Hidden;
+            GridCip8.Visibility = Visibility.Hidden;
+            GridCip9.Visibility = Visibility.Hidden;
+            GridCip1.Visibility = Visibility.Hidden;
+            Gridno.Visibility = Visibility.Hidden;
+            Gridgyerek.Visibility = Visibility.Hidden;
             Gridferfi.Visibility = Visibility.Hidden;
-            GridCip1.Visibility = Visibility.Visible;
+            GridCip10.Visibility = Visibility.Visible;
         }
 
         private void Deletecip_Click(object sender, RoutedEventArgs e)
@@ -944,26 +1148,407 @@ namespace sneaker_heaven
 
         private void newpriceforused_Click(object sender, RoutedEventArgs e)
         {
-            string sor = shoelist.SelectedItem.ToString();
-            string[] felvag = sor.Split(',');
-            string id = felvag[2].Trim();
-            string price = newpriceforused.Content.ToString();
             if (shoelist.SelectedItem == null)
             {
                 MessageBox.Show("No shoe selected.");
                 return;
             }
-            else
+
+            string sor = shoelist.SelectedItem.ToString();
+            string[] felvag = sor.Split(',');
+
+            if (felvag.Length < 3)
+            {
+                MessageBox.Show("Hibás adatformátum.");
+                return;
+            }
+
+            string brand = felvag[0].Trim();
+            string model = felvag[1].Trim();
+            string color = felvag[2].Trim();
+            object price = newpricefrused.Text;
+
+
+            try
             {
                 Conn.Connection.Open();
-                string sql = $"UPDATE `shoes` SET `Usedprice`='{price}' WHERE id = id@";
 
+                string sql = "UPDATE `shoes` SET `Usedprice`= @price WHERE `Brand` = @brand && `Model` = @model && `Color` = @color";
                 MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
-                cmd.ExecuteNonQuery();
+
+                cmd.Parameters.AddWithValue("@price", price);
+                cmd.Parameters.AddWithValue("@color", color);
+                cmd.Parameters.AddWithValue("@brand", brand);
+                cmd.Parameters.AddWithValue("@model", model);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
 
                 Conn.Connection.Close();
 
-                MessageBox.Show("Successful password update!");
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Used price successfully updated!");
+
+                    LoadShoeList();
+                }
+                else
+                {
+                    MessageBox.Show("Update failed. ID not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt: " + ex.Message);
+            }
+            finally
+            {
+                if (Conn.Connection.State == System.Data.ConnectionState.Open)
+                {
+                    Conn.Connection.Close();
+                }
+            }
+
+        }
+
+        private void LoadShoeList()
+        {
+            shoelist.Items.Clear();
+
+            try
+            {
+                Conn.Connection.Open();
+                string sql2 = "SELECT * FROM `shoes` WHERE 1";
+                MySqlCommand cmd2 = new MySqlCommand(sql2, Conn.Connection);
+
+                MySqlDataReader dr2 = cmd2.ExecuteReader();
+
+                while (dr2.Read())
+                {
+                    var felhasznalo2 = new
+                    {
+                        brand = dr2.GetString(0),
+                        model = dr2.GetString(1),
+                        color = dr2.GetString(2),
+                        newprice = dr2.GetInt64(3),
+                        usedprice = dr2.GetInt64(4),
+                    };
+
+                    shoelist.Items.Add(felhasznalo2.brand + "," + felhasznalo2.model + "," + felhasznalo2.color + "," + felhasznalo2.newprice + "," + felhasznalo2.usedprice);
+                }
+
+                dr2.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt a lista betöltésekor: " + ex.Message);
+            }
+            finally
+            {
+                Conn.Connection.Close();
+            }
+        }
+
+        private void Updatenew_Click(object sender, RoutedEventArgs e)
+        {
+            newpricefornew.Visibility = Visibility.Visible;
+            newpricefrnew.Visibility = Visibility.Visible;
+            newpricelabel2.Visibility = Visibility.Visible;
+        }
+
+        private void newpricefornew_Click(object sender, RoutedEventArgs e)
+        {
+            if (shoelist.SelectedItem == null)
+            {
+                MessageBox.Show("No shoe selected.");
+                return;
+            }
+
+            string sor = shoelist.SelectedItem.ToString();
+            string[] felvag = sor.Split(',');
+
+            if (felvag.Length < 3)
+            {
+                MessageBox.Show("Hibás adatformátum.");
+                return;
+            }
+
+            string brand = felvag[0].Trim();
+            string model = felvag[1].Trim();
+            string color = felvag[2].Trim();
+            object price = newpricefrnew.Text;
+
+
+            try
+            {
+                Conn.Connection.Open();
+
+                string sql = "UPDATE `shoes` SET `Newprice`= @price WHERE `Brand` = @brand && `Model` = @model && `Color` = @color";
+                MySqlCommand cmd = new MySqlCommand(sql, Conn.Connection);
+
+                cmd.Parameters.AddWithValue("@price", price);
+                cmd.Parameters.AddWithValue("@color", color);
+                cmd.Parameters.AddWithValue("@brand", brand);
+                cmd.Parameters.AddWithValue("@model", model);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                Conn.Connection.Close();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Used price successfully updated!");
+
+                    LoadShoeList();
+                }
+                else
+                {
+                    MessageBox.Show("Update failed. ID not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba történt: " + ex.Message);
+            }
+            finally
+            {
+                if (Conn.Connection.State == System.Data.ConnectionState.Open)
+                {
+                    Conn.Connection.Close();
+                }
+            }
+        }
+
+        private void new10_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new10.IsChecked == true)
+            {
+                ar9.Content = $"Price: 210€";
+            }
+            else
+            {
+                ar9.Content = $"Price: 165€";
+            }
+        }
+
+        private void new9_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new9.IsChecked == true)
+            {
+                ar8.Content = $"Price: 210€";
+            }
+            else
+            {
+                ar8.Content = $"Price: 130€";
+            }
+        }
+
+        private void new8_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new8.IsChecked == true)
+            {
+                ar7.Content = $"Price: 150€";
+            }
+            else
+            {
+                ar7.Content = $"Price: 400€";
+            }
+        }
+
+        private void new7_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new7.IsChecked == true)
+            {
+                ar6.Content = $"Price: 170€";
+            }
+            else
+            {
+                ar6.Content = $"Price: 77€";
+            }
+        }
+
+        private void new6_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new6.IsChecked == true)
+            {
+                ar5.Content = $"Price: 120€";
+            }
+            else
+            {
+                ar5.Content = $"Price: 86€";
+            }
+        }
+
+        private void new5_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new5.IsChecked == true)
+            {
+                ar4.Content = $"Price: 120€";
+            }
+            else
+            {
+                ar4.Content = $"Price: 88€";
+            }
+        }
+
+        private void new4_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new4.IsChecked == true)
+            {
+                ar3.Content = $"Price: 220€";
+            }
+            else
+            {
+                ar3.Content = $"Price: 168€";
+            }
+        }
+
+        private void new3_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new3.IsChecked == true)
+            {
+                ar2.Content = $"Price: 220€";
+            }
+            else
+            {
+                ar2.Content = $"Price: 170€";
+            }
+        }
+
+        private void new2_Checked(object sender, RoutedEventArgs e)
+        {
+            if (new2.IsChecked == true)
+            {
+                ar1.Content = $"Price: 220€";
+            }
+            else
+            {
+                ar1.Content = $"Price: 120€";
+            }
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            if (new2.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Adidas yeezy 350 v2 beluga reflective 220 €");
+                fizetendo += 220;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Adidas yeezy 350 v2 beluga reflective 120 €");
+                fizetendo += 120;
+            }
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            if (new3.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Adidas yeezy 350 v2 black red 220 €");
+                fizetendo += 220;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Adidas yeezy 350 v2 black red 170 €");
+                fizetendo += 170;
+            }
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            if (new4.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Adidas yeezy 350 v2 zebra 220 €");
+                fizetendo += 220;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Adidas yeezy 350 v2 zebra 168 €");
+                fizetendo += 168;
+            }
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            if (new5.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Adidas Yeezy Foam runner clay taupe 120 €");
+                fizetendo += 120;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Adidas Yeezy Foam runner clay taupe 88 €");
+                fizetendo += 88;
+            }
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            if (new6.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Adidas Yeezy Foam Runner Onyx 120 €");
+                fizetendo += 120;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Adidas Yeezy Foam Runner Onyx 86 €");
+                fizetendo += 86;
+            }
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            if (new7.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Jordan 1 Chicago Lost and Found 170 €");
+                fizetendo += 170;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Jordan 1 Chicago Lost and Found 77 €");
+                fizetendo += 77;
+            }
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            if (new8.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Jordan 1 Low Travis Scott Black Phantom 150 €");
+                fizetendo += 150;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Jordan 1 Low Travis Scott Black Phantom 400 €");
+                fizetendo += 400;
+            }
+        }
+
+        private void Button_Click_11(object sender, RoutedEventArgs e)
+        {
+            if (new9.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Jordan 4 Bred Remaigned 210 €");
+                fizetendo += 210;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Jordan 4 Bred Remaigned 130 €");
+                fizetendo += 130;
+            }
+        }
+
+        private void Button_Click_12(object sender, RoutedEventArgs e)
+        {
+            if (new10.IsChecked == true)
+            {
+                kosarlist.Items.Add($"Jordan 4 Military Black 210 €");
+                fizetendo += 210;
+            }
+            else
+            {
+                kosarlist.Items.Add($"Jordan 4 Military Black 165 €");
+                fizetendo += 165;
             }
         }
     }
