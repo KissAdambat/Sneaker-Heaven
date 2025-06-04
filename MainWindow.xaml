@@ -65,7 +65,7 @@
             <Button x:Name="Home" Content="SNEAKER HEAVEN" HorizontalAlignment="Left" VerticalAlignment="Center" Width="125" Click="Home_Click" BorderBrush="{x:Null}" Height="44" FontFamily="Tarzan" Background="{x:Null}" Foreground="White"/>
             <Button x:Name="devbutton" Content="DEV" HorizontalAlignment="Left" Margin="619,0,0,0" VerticalAlignment="Center" Height="44" Width="55" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan" Click="devbutton_Click" Foreground="White"/>
         </Grid>
-        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="5" Margin="10,43,10,10">
+        <Grid x:Name="GridAccaunt" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
             <Label x:Name="name" Content="Account name: " HorizontalAlignment="Left" Margin="54,44,0,0" VerticalAlignment="Top" Width="112" Height="30" FontFamily="Tarzan" Foreground="White"/>
             <Label x:Name="email" Content="Email:" HorizontalAlignment="Left" Margin="54,74,0,0" VerticalAlignment="Top" Width="87" Height="26" FontFamily="Tarzan" Foreground="White">
                 <Label.Background>
@@ -128,17 +128,17 @@
             <Label Content="   Air Jordan 4&#xD;&#xA;   Military Black" HorizontalAlignment="Left" Margin="654,286,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.366,-0.137" Foreground="White" FontFamily="Tarzan"/>
         </Grid>
         <Grid x:Name="Gridno" Grid.ColumnSpan="5" Margin="0,53,0,0" d:IsHidden="True">
-            <Label Content="Nike Air force 1 " HorizontalAlignment="Left" Margin="43,109,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" RenderTransformOrigin="0.486,0.772" Foreground="White"/>
-            <Image HorizontalAlignment="Left" Height="60" Margin="182,30,0,0" VerticalAlignment="Top" Width="100" Source="/adidas yeezy 350 v2 beluga reflective.webp" RenderTransformOrigin="0.085,0.401"/>
-            <Image HorizontalAlignment="Left" Height="60" Margin="334,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas yeezy 350 v2 black red.webp"/>
-            <Image HorizontalAlignment="Left" Height="60" Margin="489,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas yeezy 350 v2 zebra.webp"/>
-            <Image HorizontalAlignment="Left" Height="61" Margin="643,30,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas Yeezy Foam runner clay taupe.webp"/>
-            <Image HorizontalAlignment="Left" Height="64" Margin="33,210,0,0" VerticalAlignment="Top" Width="100" Source="/Adidas Yeezy Foam Runner Onyx.png" RenderTransformOrigin="0.506,1.054"/>
-            <Image HorizontalAlignment="Left" Height="61" Margin="182,210,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 1 Chicago Lost and Found.webp" RenderTransformOrigin="-0.135,-1.412"/>
-            <Image HorizontalAlignment="Left" Height="60" Margin="334,210,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 1 Low Travis Scott Black Phantom.webp" RenderTransformOrigin="0.832,0.521"/>
-            <Image HorizontalAlignment="Left" Height="60" Margin="489,211,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Bred Remaigned.webp" RenderTransformOrigin="0.482,1.064"/>
-            <Image HorizontalAlignment="Left" Height="61" Margin="649,210,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Military Black.webp"/>
-            <Image HorizontalAlignment="Left" Height="60" Margin="33,30,0,0" VerticalAlignment="Top" Width="100" Source="/Nike Air Force 1 Low Triple White.webp" RenderTransformOrigin="0.946,0.574"/>
+            <Label Content="Nike Air force 1 Virgil Abloh White Royal" HorizontalAlignment="Left" Margin="43,109,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" RenderTransformOrigin="0.486,0.772" Foreground="White" Height="30" Width="90"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="190,30,0,0" VerticalAlignment="Top" Width="100" Source="/Nike Air Force 1 Low Louis Vuitton By Virgil Abloh Black  Metallic Silver.jpeg" RenderTransformOrigin="0.085,0.401"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="364,30,0,0" VerticalAlignment="Top" Width="112" Source="/christian loubutin louis orlato black.jpg"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="499,30,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 1 Marina Blue.jpg"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="650,30,0,0" VerticalAlignment="Top" Width="100" Source="/balenciaga triple s allover logo yellow.jfif"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="33,210,0,0" VerticalAlignment="Top" Width="100" Source="/louis vuitton trainer blue black.jpg" RenderTransformOrigin="0.506,1.054"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="198,211,0,0" VerticalAlignment="Top" Width="100" Source="/lanvin leather curb black.jfif" RenderTransformOrigin="-0.135,-1.412"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="363,210,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 1 Reimagined.webp" RenderTransformOrigin="0.832,0.521"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="510,210,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 White Oreo.webp" RenderTransformOrigin="0.482,1.064"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="657,211,0,0" VerticalAlignment="Top" Width="100" Source="/Jordan 4 Black Cat.webp"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="33,30,0,0" VerticalAlignment="Top" Width="100" Source="/Nike air force 1 virgil abloh white royal.webp" RenderTransformOrigin="0.946,0.574"/>
             <Label Content="   Adidas Yeezy 350 V2&#xA;           black red" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" Width="150" Height="50" Foreground="White" FontFamily="Tarzan"/>
             <Button x:Name="Air_force3" Content="Purchase" HorizontalAlignment="Left" Margin="65,153,0,0" VerticalAlignment="Top" Click="Air_force1_Click" RenderTransformOrigin="0.579,1.265"/>
             <Button x:Name="Adidas_Yeezy_Boost350_V2_Beluga_Reflective2" Content="Purchase" HorizontalAlignment="Left" Margin="206,153,0,0" VerticalAlignment="Top" Click="Adidas_Yeezy_Boost350_V2_Beluga_Reflective_Click" RenderTransformOrigin="0.886,0.864"/>
@@ -266,8 +266,8 @@
             <Label Content="Adidas yeezy 350 v2 beluga reflective" HorizontalAlignment="Left" Margin="155,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
             <ComboBox x:Name="meret1" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar1" Content="Price: 120€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new2" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new2_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="548,258,0,0" VerticalAlignment="Top" FontFamily="Tarzan" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_4"/>
+            <CheckBox x:Name="new2" Content="New" HorizontalAlignment="Left" Margin="530,114,0,0" VerticalAlignment="Top" Foreground="White" Checked="new2_Checked_1"/>
         </Grid>
         <Grid x:Name="GridCip3" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -278,8 +278,8 @@
             <Label Content="Adidas yeezy 350 v2 black red" HorizontalAlignment="Left" Margin="241,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White" Width="322"/>
             <ComboBox x:Name="meret2" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar2" Content="Price: 170€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new3" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new3_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="548,258,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontFamily="Tarzan" Grid.ColumnSpan="2" Click="Button_Click_5"/>
+            <CheckBox x:Name="new3" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new3_Checked_1"/>
         </Grid>
         <Grid x:Name="GridCip4" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -290,8 +290,8 @@
             <Label Content="Adidas yeezy 350 v2 zebra" HorizontalAlignment="Left" Margin="249,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
             <ComboBox x:Name="meret3" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar3" Content="Price: 168€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new4" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new4_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="548,258,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" FontFamily="Tarzan" Grid.ColumnSpan="2" Click="Button_Click_6"/>
+            <CheckBox x:Name="new4" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Background="White" Foreground="White" Checked="new4_Checked_1"/>
         </Grid>
         <Grid x:Name="GridCip5" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -302,8 +302,8 @@
             <Label Content="Adidas Yeezy Foam runner clay taupe" HorizontalAlignment="Left" Margin="196,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White" Width="388"/>
             <ComboBox x:Name="meret4" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar4" Content="Price: 88€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new5" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new5_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="548,258,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_7"/>
+            <CheckBox x:Name="new5" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Width="49" Checked="new5_Checked_1" d:IsHidden="True"/>
         </Grid>
         <Grid x:Name="GridCip6" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -314,8 +314,8 @@
             <Label Content="Adidas Yeezy Foam Runner Onyx" HorizontalAlignment="Left" Margin="208,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White" Width="364"/>
             <ComboBox x:Name="meret5" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar5" Content="Price: 86€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new6" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new6_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="557,258,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_8"/>
+            <CheckBox x:Name="new6" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new6_Checked_1"/>
         </Grid>
         <Grid x:Name="GridCip7" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -326,8 +326,8 @@
             <Label Content="Jordan 1 Chicago Lost and Found" HorizontalAlignment="Left" Margin="206,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White" Width="368"/>
             <ComboBox x:Name="meret6" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar6" Content="Price: 77€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new7" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new7_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="557,258,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_9"/>
+            <CheckBox x:Name="new7" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new7_Checked_1"/>
         </Grid>
         <Grid x:Name="GridCip8" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -338,8 +338,8 @@
             <Label Content="Jordan 1 Low Travis Scott Black Phantom" HorizontalAlignment="Left" Margin="170,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White" Width="440" Grid.ColumnSpan="2"/>
             <ComboBox x:Name="meret7" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar7" Content="Price: 400€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new8" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" RenderTransformOrigin="0.468,0.481" Checked="new8_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="557,258,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_10"/>
+            <CheckBox x:Name="new8" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new8_Checked_1"/>
         </Grid>
         <Grid x:Name="GridCip9" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -350,10 +350,10 @@
             <Label Content="Jordan 4 Bred Remaigned" HorizontalAlignment="Left" Margin="261,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
             <ComboBox x:Name="meret8" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar8" Content="Price: 130€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new9" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new9_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="557,258,0,0" VerticalAlignment="Top" FontFamily="Tarzan" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_11"/>
+            <CheckBox x:Name="new9" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new9_Checked_1"/>
         </Grid>
-        <Grid x:Name="GridCip10" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
+        <Grid x:Name="GridCip10" Grid.ColumnSpan="5" Margin="0,53,20,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="599*"/>
                 <ColumnDefinition Width="182*"/>
@@ -362,8 +362,138 @@
             <Label Content="Jordan 4 Military Black" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
             <ComboBox x:Name="meret9" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
             <Label x:Name="ar9" Content="Price: 165€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
-            <CheckBox x:Name="new10" Content="New" HorizontalAlignment="Left" Margin="538,116,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White" Checked="new10_Checked"/>
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="557,258,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_12"/>
+            <CheckBox x:Name="new10" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new10_Checked_1"/>
+        </Grid>
+        <Grid x:Name="GridCip11" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn1" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin1" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret10" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar10" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new11" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip12" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn2" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin2" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret11" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar11" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new12" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip13" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn3" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin3" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret12" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar12" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new13" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip14" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn4" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin4" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret13" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar13" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new14" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip15" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn5" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin5" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret14" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar14" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new15" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip16" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn6" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin6" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret15" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar15" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new16" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip17" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn7" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin7" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret16" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar16" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new17" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip18" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn8" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin8" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret17" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar17" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new18" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip19" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn9" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin9" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret18" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar18" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new19" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="GridCip20" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="599*"/>
+                <ColumnDefinition Width="182*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Left" Height="194" Margin="25,0,0,0" VerticalAlignment="Center" Width="196" Source="/af1.jpg"/>
+            <Label Content="Air Force 1 Low '07" HorizontalAlignment="Left" Margin="301,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,0.534" FontSize="20" Background="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
+            <Button x:Name="purchasebuttn10" Content="Purchase" HorizontalAlignment="Left" Margin="538,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.525,-0.999" Width="80" Grid.ColumnSpan="2" Click="Button_Click_3" FontFamily="Tarzan" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
+            <ComboBox x:Name="szin10" HorizontalAlignment="Left" Margin="253,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Tarzan"/>
+            <ComboBox x:Name="meret19" HorizontalAlignment="Left" Margin="404,112,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="meret_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan"/>
+            <Label x:Name="ar19" Content="Price: 60€" HorizontalAlignment="Left" Margin="538,227,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontFamily="Tarzan" Foreground="White"/>
+            <CheckBox x:Name="new20" Content="New" HorizontalAlignment="Left" Margin="538,115,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="80" BorderBrush="{x:Null}" Background="White" FontFamily="Tarzan" IsChecked="False" Click="new1_Click" Foreground="White"/>
         </Grid>
 
     </Grid>

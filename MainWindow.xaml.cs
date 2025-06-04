@@ -60,6 +60,16 @@ namespace sneaker_heaven
             GridCip8.Visibility = Visibility.Hidden;
             GridCip9.Visibility = Visibility.Hidden;
             GridCip10.Visibility = Visibility.Hidden;
+            GridCip11.Visibility = Visibility.Hidden;
+            GridCip12.Visibility = Visibility.Hidden;
+            GridCip13.Visibility = Visibility.Hidden;
+            GridCip14.Visibility = Visibility.Hidden;
+            GridCip15.Visibility = Visibility.Hidden;
+            GridCip16.Visibility = Visibility.Hidden;
+            GridCip17.Visibility = Visibility.Hidden;
+            GridCip18.Visibility = Visibility.Hidden;
+            GridCip19.Visibility = Visibility.Hidden;
+            GridCip20.Visibility = Visibility.Hidden;
             szin.Items.Add(cipok[0]);
             szin.Items.Add(cipok[1]);
             meret.ItemsSource = ferfimeretek;
@@ -1549,6 +1559,115 @@ namespace sneaker_heaven
             {
                 kosarlist.Items.Add($"Jordan 4 Military Black 165 €");
                 fizetendo += 165;
+            }
+            
+        }
+
+        private void new2_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new2.IsChecked == true)
+            {
+                ar1.Content = $"Price: 220€";
+            }
+            else
+            {
+                ar1.Content = $"Price: 120€";
+            }
+        }
+
+        private void new3_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new3.IsChecked == true)
+            {
+                ar2.Content = $"Price: 220€";
+            }
+            else
+            {
+                ar2.Content = $"Price: 170€";
+            }
+        }
+
+        private void new4_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new4.IsChecked == true)
+            {
+                ar3.Content = $"Price: 220€";
+            }
+            else
+            {
+                ar3.Content = $"Price: 168€";
+            }
+        }
+
+        private void new5_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new5.IsChecked == true)
+            {
+                ar4.Content = $"Price: 120€";
+            }
+            else
+            {
+                ar4.Content = $"Price: 88€";
+            }
+        }
+
+        private void new6_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new6.IsChecked == true)
+            {
+                ar5.Content = $"Price: 120€";
+            }
+            else
+            {
+                ar5.Content = $"Price: 86€";
+            }
+        }
+
+        private void new7_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new7.IsChecked == true)
+            {
+                ar6.Content = $"Price: 170€";
+            }
+            else
+            {
+                ar6.Content = $"Price: 77€";
+            }
+        }
+
+        private void new8_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new8.IsChecked == true)
+            {
+                ar7.Content = $"Price: 150€";
+            }
+            else
+            {
+                ar7.Content = $"Price: 400€";
+            }
+        }
+
+        private void new9_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new9.IsChecked == true)
+            {
+                ar8.Content = $"Price: 210€";
+            }
+            else
+            {
+                ar8.Content = $"Price: 130€";
+            }
+        }
+
+        private void new10_Checked_1(object sender, RoutedEventArgs e)
+        {
+            if (new10.IsChecked == true)
+            {
+                ar9.Content = $"Price: 210€";
+            }
+            else
+            {
+                ar9.Content = $"Price: 165€";
             }
         }
     }

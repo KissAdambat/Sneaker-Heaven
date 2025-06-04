@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("adidas%20yeezy%20foam%20runner%20onyx.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("balenciaga%20triple%20s%20allover%20logo%20yellow.jfif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("lanvin%20leather%20curb%20black.jfif")]
 
 

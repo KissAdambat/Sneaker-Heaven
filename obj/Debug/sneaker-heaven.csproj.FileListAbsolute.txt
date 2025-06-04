@@ -91,7 +91,6 @@ C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.g.resources
 C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker_heaven.Properties.Resources.resources
 C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.csproj.GenerateResource.cache
 C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.csproj.CoreCompileInputs.cache
-C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.csproj.CopyComplete
 C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.exe
 C:\Users\Kissa\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.pdb
 C:\Users\Ádám\Source\Repos\Sneaker-Heaven\bin\Debug\sneaker-heaven.exe.config
@@ -430,3 +429,5 @@ C:\Users\Tanulo\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.csproj.Core
 C:\Users\Tanulo\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-.4BCE3C43.Up2Date
 C:\Users\Tanulo\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.exe
 C:\Users\Tanulo\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven.pdb
+C:\Users\KissA\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-.4BCE3C43.Up2Date
+C:\Users\KissA\Source\Repos\Sneaker-Heaven\obj\Debug\sneaker-heaven_Content.g.cs

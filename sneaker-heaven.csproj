@@ -149,6 +149,11 @@
     <Resource Include="Jordan 4 Bred Remaigned.webp" />
     <Resource Include="Jordan 4 Military Black.webp" />
     <Resource Include="Nike Air Force 1 Low Triple White.webp" />
+    <Resource Include="Nike air force 1 virgil abloh white royal.webp" />
+    <Resource Include="dior b23 high oblique.avif" />
+    <Resource Include="Jordan 1 Reimagined.webp" />
+    <Resource Include="Jordan 4 White Oreo.webp" />
+    <Resource Include="Jordan 4 Black Cat.webp" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -217,6 +222,20 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Adidas Yeezy Foam Runner Onyx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Nike Air Force 1 Low Louis Vuitton By Virgil Abloh Black  Metallic Silver.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="christian loubutin louis orlato black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Jordan 1 Marina Blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="balenciaga triple s allover logo yellow.jfif" />
+    <Content Include="lanvin leather curb black.jfif" />
+    <Resource Include="louis vuitton trainer blue black.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
