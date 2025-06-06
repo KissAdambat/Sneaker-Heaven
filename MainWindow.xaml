@@ -26,9 +26,9 @@
             <Button x:Name="button3" Content="Bejelentkezés" HorizontalAlignment="Left" Margin="330,246,0,0" VerticalAlignment="Top" Width="120" Click="button3_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Tarzan" Foreground="White"/>
             <PasswordBox x:Name="passs" HorizontalAlignment="Left" Margin="329,205,0,0" VerticalAlignment="Top" Width="120"/>
         </Grid>
-        <Grid x:Name="Grid2fej" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="800" d:IsHidden="True">
-            <Button x:Name="button1" Content="Login" HorizontalAlignment="Left" Margin="644,0,0,0" VerticalAlignment="Center" Width="78" Height="42" Click="button1_Click" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Tarzan"/>
-            <Button x:Name="button2" HorizontalAlignment="Left" Margin="727,0,0,0" VerticalAlignment="Center" Width="73" Height="42" Click="button2_Click" BorderBrush="{x:Null}" Content="REGISTER" FontFamily="Tarzan" Foreground="White" Background="{x:Null}"/>
+        <Grid x:Name="Grid2fej" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="800">
+            <Button x:Name="button1" Content="Login" HorizontalAlignment="Left" Margin="634,0,0,0" VerticalAlignment="Center" Width="78" Height="42" Click="button1_Click" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontFamily="Tarzan"/>
+            <Button x:Name="button2" HorizontalAlignment="Left" Margin="717,0,0,0" VerticalAlignment="Center" Width="73" Height="42" Click="button2_Click" BorderBrush="{x:Null}" Content="REGISTER" FontFamily="Tarzan" Foreground="White" Background="{x:Null}"/>
             <Button Content="SNEAKER HEAVEN" HorizontalAlignment="Left" VerticalAlignment="Center" Width="122" Click="Button_Click_1" BorderBrush="{x:Null}" Height="42" FontFamily="Tarzan" Foreground="White" Background="{x:Null}"/>
         </Grid>
         <Grid x:Name="GridMain" Grid.ColumnSpan="5" Margin="0,43,0,0" d:IsHidden="True">
@@ -48,7 +48,7 @@
             <PasswordBox x:Name="pass1" HorizontalAlignment="Left" Margin="281,190,0,0" VerticalAlignment="Top" Width="120"/>
             <PasswordBox x:Name="pass2" HorizontalAlignment="Left" Margin="281,239,0,0" VerticalAlignment="Top" Width="120"/>
         </Grid>
-        <Grid x:Name="GridFej1" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="43" Margin="10,0,0,0" VerticalAlignment="Top" Width="780">
+        <Grid x:Name="GridFej1" Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="43" Margin="10,0,0,0" VerticalAlignment="Top" Width="780" d:IsHidden="True">
             <Button x:Name="logo" Content="" HorizontalAlignment="Left" Margin="739,0,0,0" VerticalAlignment="Center" Width="31" Height="30" BorderBrush="{x:Null}" Click="logo_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/sneakerhead-vlw0ei79s3e0rmxi.jpg"/>
