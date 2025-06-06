@@ -217,7 +217,7 @@
             <TextBox x:Name="newpricefrnew" HorizontalAlignment="Left" Margin="628,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFAC4141" SelectionBrush="{x:Null}" Background="{x:Null}" Foreground="White"/>
             <Button x:Name="newpricefornew" Content="Update" HorizontalAlignment="Left" Margin="656,315,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontFamily="Tarzan" Width="52" Click="newpricefornew_Click"/>
         </Grid>
-        <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10" d:IsHidden="True">
+        <Grid x:Name="GridCheckOut" Grid.ColumnSpan="5" Margin="10,43,10,10">
             <Label x:Name="checkoutinfo" Content="Billing Information" HorizontalAlignment="Left" Margin="49,35,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="20" Foreground="White"/>
             <Label x:Name="lname" Content="Last Name" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16" Foreground="White"/>
             <TextBox x:Name="LNametext" HorizontalAlignment="Left" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
@@ -242,7 +242,7 @@
             <TextBox x:Name="lejaratiido" HorizontalAlignment="Left" Margin="351,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
             <Label x:Name="cvv" Content="CVV" HorizontalAlignment="Left" Margin="351,257,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Tarzan" FontSize="16" Foreground="White"/>
             <TextBox x:Name="cvv1" HorizontalAlignment="Left" Margin="353,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionBrush="{x:Null}" FontFamily="Segoe UI Light"/>
-            <Button x:Name="pay2" Content="Pay" HorizontalAlignment="Left" Margin="280,340,0,0" VerticalAlignment="Top" FontFamily="Tarzan" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Click="pay2_Click" Foreground="White"/>
+            <Button x:Name="pay2" Content="Pay" HorizontalAlignment="Left" Margin="298,318,0,0" VerticalAlignment="Top" FontFamily="Tarzan" FontSize="22" Background="{x:Null}" BorderBrush="{x:Null}" Click="pay2_Click" Foreground="White"/>
         </Grid>
         <Grid x:Name="GridCip1" Margin="0,53,20,0" Grid.ColumnSpan="5" d:IsHidden="True">
             <Grid.ColumnDefinitions>
@@ -353,7 +353,7 @@
             <Button Content="Purchase" HorizontalAlignment="Left" Margin="557,258,0,0" VerticalAlignment="Top" FontFamily="Tarzan" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Grid.ColumnSpan="2" Click="Button_Click_11"/>
             <CheckBox x:Name="new9" Content="New" HorizontalAlignment="Left" Margin="529,115,0,0" VerticalAlignment="Top" Foreground="White" Checked="new9_Checked_1"/>
         </Grid>
-        <Grid x:Name="GridCip10" Grid.ColumnSpan="5" Margin="0,53,20,0">
+        <Grid x:Name="GridCip10" Grid.ColumnSpan="5" Margin="0,53,20,0" d:IsHidden="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="599*"/>
                 <ColumnDefinition Width="182*"/>
